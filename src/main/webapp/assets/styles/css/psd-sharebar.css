@@ -1,0 +1,280 @@
+.psd-sharebar.horizontal {
+    margin-top:16px;
+    margin-bottom:20px;
+    *overflow:hidden;
+}
+
+.psd-sharebar.vertical {
+    width:50px;
+    padding:5px;
+    border:1px solid #ccc;
+}
+
+.psd-sharebar .iconContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.psd-sharebar .psd-sharebar-icon {
+    position:relative;
+    display:inline-block;
+    *float:left;
+    width:27px;
+    height:24px;
+    margin-top:8px;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    box-shadow:1px 1px 2px #d6d7d9;
+}
+
+.psd-sharebar .psd-sharebar-icon a {
+    position:relative;
+    display:inline-block;
+    height:24px;
+}
+
+.psd-sharebar .psd-sharebar-icon a img {
+    width:27px; 
+    height:24px; 
+    border-radius:2px;
+}
+
+.psd-sharebar.horizontal .psd-sharebar-icon {
+    display:inline-block;
+    margin-right:11px;
+}
+
+.psd-sharebar.vertical .psd-sharebar-icon {
+    display:block;
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+.psd-sharebar.horizontal .psd-sharebar-leadText {
+    color:#464646;
+    display:inline;
+    font:bold 12px helvetica,arial;
+    vertical-align:50%;
+    margin-right:5px;
+}
+
+.psd-sharebar.vertical .psd-sharebar-leadText {
+    color:#fff;
+    display:block;
+    background-color:#137dc0;
+    text-transform:uppercase;
+    font:10px helvetica,arial;
+    text-align:center;
+    padding:3px;
+}
+
+#psd-sharebar-email-form {
+    position:fixed;
+    top:50%;
+    left:50%;
+    background-color:#fff;
+    margin:-182px 0 0 -295px;
+    display:none;
+    opacity:0;
+    width:590px;
+    height:420px;
+    border:1px solid #dcdcdc;
+    box-shadow:2px 2px 4px #ccc;
+    opacity:0;
+    z-index:123456789;
+    -webkit-transition:-webkit-transform 0.25s, opacity 0.25s;
+    -webkit-transform:scale3d(0.5, 0.5,1.0);
+    -moz-transition:-moz-transform 0.25s, opacity 0.25s;
+    -moz-transform:scale3d(0.5, 0.5,1.0);
+}
+
+#psd-sharebar-email-form.active {
+    opacity:1.0;
+    -webkit-transform:scale3d(1.0, 1.0,1.0);
+    -moz-transform:scale3d(1.0, 1.0,1.0);
+}
+
+#psd-sharebar-email-form h2 {
+    background-color:#137dc0;
+    margin:0;
+    padding:4px 0 4px 16px;
+    color:#fff;
+    font:18px helvetica,arial;
+    vertical-align:50%;
+}
+
+#psd-sharebar-email-form label {
+    color:#464646;
+    font:bold 12px helvectica, arial;
+}
+
+#psd-sharebar-email-form fieldset {
+    border:none;
+    margin-top:10px;
+}
+
+#psd-sharebar-email-form textarea,
+#psd-sharebar-email-form input[type=text],
+#psd-sharebar-email-form input[type=email] {
+    border-radius:0;
+    background: rgb(248,248,248);
+    background: -moz-linear-gradient(top,  rgba(248,248,248,1) 0%, rgba(255,255,255,1) 47%, rgba(248,248,248,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(248,248,248,1)), color-stop(47%,rgba(255,255,255,1)), color-stop(100%,rgba(248,248,248,1)));
+    background: -webkit-linear-gradient(top,  rgba(248,248,248,1) 0%,rgba(255,255,255,1) 47%,rgba(248,248,248,1) 100%);
+    background: -o-linear-gradient(top,  rgba(248,248,248,1) 0%,rgba(255,255,255,1) 47%,rgba(248,248,248,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(248,248,248,1) 0%,rgba(255,255,255,1) 47%,rgba(248,248,248,1) 100%);
+    background: linear-gradient(to bottom,  rgba(248,248,248,1) 0%,rgba(255,255,255,1) 47%,rgba(248,248,248,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#f8f8f8',GradientType=0 );
+}
+
+#psd-sharebar-email-form fieldset.psd-sharebar-email-form-user-data input[type=text],
+#psd-sharebar-email-form fieldset.psd-sharebar-email-form-user-data input[type=email] {
+    height:24px;
+    width:265px;
+    margin-top:2px;
+    border:1px solid #cdcdcd;
+}
+
+#psd-sharebar-email-form fieldset.psd-sharebar-email-form-user-data label {
+    display:inline-block;
+    width:45%;
+}
+
+#psd-sharebar-email-form fieldset.psd-sharebar-email-form-user-data label:first-of-type {
+    margin-right:30px;
+}
+
+#psd-sharebar-email-form fieldset.psd-sharebar-email-form-message-data label {
+    display:block;
+    margin-bottom:15px;
+}
+
+#psd-sharebar-email-form fieldset.psd-sharebar-email-form-message-data label span {
+    color:#8c8c8c;
+    font:10px helvetica,arial;
+    margin-left:5px;
+}
+
+#psd-sharebar-email-form fieldset.psd-sharebar-email-form-message-data input[type=text] {
+    width:550px;
+    height:24px;
+    margin-top:5px;
+    border:1px solid #cdcdcd;
+}
+
+#psd-sharebar-email-form fieldset.psd-sharebar-email-form-message-data label textarea {
+    width:550px;
+    height:55px;
+    margin-top:5px;
+    border:1px solid #cdcdcd;
+    resize:none;
+}
+
+#psd-sharebar-email-form fieldset.psd-sharebar-email-form-captcha {
+    margin-top:-20px;
+}
+
+#psd-sharebar-email-form fieldset.psd-sharebar-email-form-captcha input[type=text] {
+    width:150px;
+    height:30px;
+    border:1px solid #cdcdcd;
+}
+
+
+#psd-sharebar-email-form fieldset.psd-sharebar-email-form-submission input[type=submit] {
+    background-color:#2277cc;
+    color:#fff;
+    font:14px helvetica,arial;
+    text-transform:uppercase;
+    width:96px;
+    height:27px;
+    border:none;
+    border-radius:0;
+    -webkit-appearance:none;
+}
+
+#psd-sharebar-email-form fieldset.psd-sharebar-email-form-submission {
+    margin-top:0;
+    text-align:right;
+}
+
+#psd-sharebar-email-form fieldset.psd-sharebar-email-form-submission button {
+    background-color:transparent;
+    border:none;
+}
+
+#psd-sharebar-email-form fieldset.psd-sharebar-email-form-submission button span {
+    color:#2277cc;
+}
+
+#psd-sharebar-email-form h2 button#psd-sharebar-email-form-close {
+    background-color:#fff;
+    position:absolute;
+    top:5px;
+    right:20px;
+    color:#2277cc;
+    border-radius:20px;
+    width:18px;
+    height:18px;
+    border:none;
+    text-align:center;
+    font:bold 12px helvetica;
+}
+
+.psd-sharebar .psd-sharebar-icon .psd-sharebar-share-count {
+    font:10px helvetica, arial;
+    color:#333;
+    text-align:center;
+}
+
+.psd-sharebar.horizontal .psd-sharebar-icon .psd-sharebar-share-count {
+    position:absolute;
+    display:inline-block;
+    top:-30px;
+    width:30px;
+    text-align:center;
+}
+
+.psd-sharebar.vertical .psd-sharebar-icon .psd-sharebar-share-count {
+    position:relative;
+    margin-top:15px;
+    padding-bottom:2px;
+}
+
+.psd-sharebar-sprite {
+    overflow:hidden; 
+    background-repeat: no-repeat;
+    background-image:url(/assets/sharebar/images/sprite.png);
+}
+
+.psd-sharebar-email {width:27px; height:24px; background-position: -31px -54px}
+.psd-sharebar-facebook {width:27px; height:24px; background-position: -2px -54px}
+.psd-sharebar-googleplus {width:27px; height:24px; background-position: -31px -28px}
+.psd-sharebar-linkedin {width:27px; height:24px; background-position: -2px -28px}
+.psd-sharebar-pinterest {width:27px; height:24px; background-position: -31px -2px}
+.psd-sharebar-twitter {width:27px; height:24px; background-position: -2px -2px}
+
+#psd-sharebar-email-form .submissionError:after {
+    content:" Please correct the fields below";
+    color:#000000;
+}
+
+#psd-sharebar-email-form .nameMissing{
+    color:#ff0000;
+}
+#psd-sharebar-email-form .emailMissing{
+    color:#ff0000;
+}
+#psd-sharebar-email-form .emailFormat{
+    color:#ff0000;
+}
+#psd-sharebar-email-form .ccFormat{
+    color:#ff0000;
+}
+#psd-sharebar-email-form .captchaIncorrect{
+    color:#ff0000;
+}
+
+.fb-like {
+    width: 275px !important;
+}

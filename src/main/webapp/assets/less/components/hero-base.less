@@ -1,0 +1,52 @@
+
+// hero
+//============================
+
+.dev-hero{
+    position: relative;
+    max-height: 460px;
+    overflow: hidden;   
+    margin-bottom: @space-double;
+    &-bg{
+        background: linear-gradient(
+            to top, 
+            rgba(0, 0, 0, 1),  
+            rgba(0, 0, 0, 0) 15%
+            );
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    &-container{
+        .dev-container;
+        max-width: @container-narrow;
+        position: absolute;
+        bottom: -7px;
+        left: 0;
+        right: 0;
+    }
+    &-row{
+        .dev-row;
+    }
+    &-inner{
+        .dev-column-full;
+    }   
+    .hero-bg-img{
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+    .hero-title{
+        h1{
+            .type-scale(5);
+            .font-primary-bold;
+            color: @white;
+            .text-uppercase;
+        }
+
+    }
+}

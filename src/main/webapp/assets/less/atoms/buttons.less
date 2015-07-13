@@ -1,0 +1,28 @@
+
+// buttons
+//============================
+.btn{
+    padding: @space-three-quarter @space-double-three-quarter;
+    .type-scale(1);
+    border: 1px solid @gray-light-1;
+    .font-primary-light;
+    .text-center;
+    display: inline-block;
+    .border-radius(0);
+    &-dl{
+        background: @green-dark-1;
+        color: @white;
+        border: none;
+        .text-uppercase;
+        
+        &:hover{
+            background: lighten(@green-dark-1,10%);
+            color: @white;
+        }
+    }
+}
+
+.btn-block{
+    .text-center;
+}
+

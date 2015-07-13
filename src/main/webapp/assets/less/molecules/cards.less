@@ -1,0 +1,47 @@
+//
+// Molecules / Cards
+// ----------------------
+.card{
+    .square(220px);
+    cursor: pointer;
+    .text{
+        top: 0;
+        color: @white;
+        .team-name{
+            .font-primary;
+            .type-scale(2);
+        }
+        .team-pos{
+            .font-primary-bold;
+            .type-scale(1);
+        }
+    }
+    .media{
+        .opacity(1);
+        .transition(opacity ease-out 0.2s);
+    }
+    &:hover{
+        .media{
+            .opacity(0.6);
+        }
+    }
+    .team-anchor{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .icon-team{
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        transition: all ease-out 0.15s;
+    }
+    &.active{
+        .media{
+            .opacity(.2);
+            .transition(opacity ease-out 0.2s);
+        }
+    }
+}

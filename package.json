@@ -1,0 +1,6 @@
+{
+  "name": "dev-test",
+  "devDependencies": {
+    "bsp-grunt": "1.1.1"
+  }
+}

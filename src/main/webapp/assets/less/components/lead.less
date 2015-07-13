@@ -1,0 +1,71 @@
+
+// home dl
+//============================
+
+@maxHeight: 500px;
+
+.dev-carousel-stage{
+    margin-bottom: @space-double;
+    &#dev-lead{
+        .carousel-slide{
+            max-height: @maxHeight;
+            img{
+                max-width: 100%;
+                height: auto;               
+                width: 100%;
+            }
+            &.slick-slide{
+                position: relative;
+            }
+            //slide container
+            .carousel-container{
+                .dev-container;
+                top: 0px;
+                left: 0;
+                right: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .carousel-content{
+                .make-sm-column(4);
+                padding: 0;
+                background: rgba(255,255,255,0.9);
+                min-height: 380px;
+                .pull-right;
+                .carousel-content-inner{        
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    .text-center;
+                    width: 100%;
+                    padding: @space-double;
+                    .carousel-img-wrapper{
+                        margin-bottom: @space;
+                        img{
+                            max-width: 190px;
+                            height: auto;
+                            margin: auto;
+                        }
+                    }
+                    .carousel-info-wrapper{
+                        .title{
+                            .type-scale(3);
+                            margin-bottom: @space;
+                        }
+                        .blurb{
+                            .type-scale(1);
+                            margin-bottom: @space;
+                        }
+                        .blurb,
+                        .title{
+                            .font-primary-light;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

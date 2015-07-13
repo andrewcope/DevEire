@@ -1,0 +1,259 @@
+//
+// Molecule / Block
+// ----------------------
+//blocks
+
+.block{
+    &-container{
+        .dev-container;
+    }
+    &-row{
+        .make-row(10px);
+    }
+    margin-bottom: @blockGutter;
+}
+.block-double{
+    .make-sm-column(6, @blockGutter);
+}
+.block-triple{
+    .make-sm-column(4, @blockGutter);
+}
+.block-quart{
+    .make-sm-column(3, @blockGutter);
+}
+.block {
+    .box-sizing(border-box);
+    position: relative;
+    display: block;
+    width: 100%;
+
+    &.center-block,
+    &.pull-left,
+    &.pull-right {
+        margin-top: @space-half;
+        margin-bottom: @space-and-half;
+    }
+    &.pull-left{
+
+        margin-right: @space-and-half;
+    }
+    &.pull-right{
+        margin-left: @space-and-half;
+    }
+    .title {
+        .type-scale(-1);
+        font-weight:bold;
+    }
+    .media {
+        .label {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    // text positioned below (default)
+    .media,
+    .text {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+
+    .text {
+        margin-top:@space-half;
+        overflow: hidden;
+        _overflow: visible;
+        zoom: 1;
+
+        h4 {
+            margin:0;
+        }
+
+        p {
+            color: @black;
+            .type-scale(-1);
+            margin:0;
+            .font-primary-bold;
+        }
+
+        a {
+            /*.link-inverse();*/
+        }
+        .caption{
+            .type-scale(-2);
+            color: @gray;
+            padding-top: @space-three-quarter;
+        }
+        .credit {
+            .type-scale(-2);
+        }
+    }
+
+    // images will always "size-to-fit" their container
+    // while preserving AR. The idea is that the outer container
+    // will be designed in such a way to dictate the overall dimensions
+    // and should respect the intent/ratio/quality of the images being used.
+    .media {
+        > a {
+            &:hover{
+                img {
+                    /*.opacity(@block-media-opacity);*/
+                    /*.transition(opacity @transition-short ease);*/
+                }
+            }
+        }
+        a {display: block;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+}
+
+
+// Block Modifiers
+// ------------------------
+
+// Positions the text element to the right
+.block-text-right {
+    .clearfix();
+
+    .media {
+        float:left;
+        margin-right: @space;
+        width: auto;
+    }
+
+    .text {
+        width: auto;
+    }
+}
+
+// Positions the text element to the left
+.block-text-left {
+    .clearfix();
+
+    .media {
+        float: right;
+        margin-left: @space;
+        width: auto;
+    }
+
+    .text {
+        width: auto;
+    }
+}
+
+// Positions the text container to overlap the media element
+.block-text-overlay {
+    .text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        pointer-events: none;
+        padding: @space-three-quarter;
+        margin: 0;
+        p{
+            color: @white;
+        }
+        h4{
+            .type-scale(0);
+        }
+    }
+}
+.block-text-overlay-center{
+    &:extend(.block-text-overlay all);
+    .text{
+        display: table;
+        top: 0;
+        margin: auto;
+        p{
+            .text-center;
+            color: @white;
+        }
+    }
+}
+.block-title{
+    .type-scale(2);
+    .font-primary;
+}
+.block-gradient{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 15%, rgba(0,0,0,1));
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+// Creates a bottom fade over the media within the block
+.block-media-fade {
+    .media a::before {
+        //.box-shadow(@gradient);
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+
+        #gradient .vertical(rgba(0,0,0,0),rgba(0,0,0,0.75), 50%, 100%);
+    }
+    .text {
+        padding:@space-half;
+
+        h4, p, a {
+            color: @white;
+        }
+    }
+}
+
+//Lighter fade for use without text (default is dark)
+.block-media-fade-light {
+    .media {
+        &.toggledOn a::before {
+            .search-grid-small & {
+                .opacity(1);
+            }
+
+        }
+        a::before {
+            .box-shadow(inset 0 -@space-quad (@space * 7) -(@space * 1) rgba(0, 0, 0, 0.6));
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            .search-grid & {
+                .opacity(0);
+                .transition(opacity @transition-short ease);
+            }
+        }
+    }
+}
+
+// Creates a radial fade over the media within the block
+/*.block-media-fade-corners {
+  .media a::before,
+  .media a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .media a::before {
+    .radial-four-corner-gradient();
+  }
+  .media a::after {
+    .linear-bottom-gradient();
+  }
+}*/

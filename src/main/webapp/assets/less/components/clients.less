@@ -1,0 +1,110 @@
+
+// our-work
+//============================
+
+@cardBorder: 1px solid @green-dark-1;
+.our-work{
+    margin-top: @gutter-top;  
+}
+.our-work{
+    &-fluid-container{
+        .dev-container-fluid;
+        background: #CFDBC5;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    &-container{
+        .dev-container;
+        max-width: @container-narrow;
+    }
+    &-row{
+        .make-row(20px);
+        position: relative;
+    } 
+    &-card-outer{
+        /*.make-md-column(3, 20px);*/
+    }
+    &-wrapper{
+        margin: 0 auto;
+    }
+    &-card-outer{
+        &:extend(.team-card all); 
+        .make-sm-column(4, 20px);
+        border: none;
+        height: 200px;
+        background: transparent;
+        .our-work-card{
+            &:extend(.card all); 
+            &:extend(.block all);
+            &:extend(.block-text-overlay all);   
+            background: @white;
+            width: auto;
+            height: 200px;
+            .opacity(1);
+            border: @cardBorder;
+            .our-work-desc{
+                display: none; 
+            }
+            .text{
+                .opacity(1);
+                top: initial;
+                margin: 0;
+                background-color: @white;
+                height: 50px;
+                display: table;
+                padding: 5px;
+                border-top: @cardBorder;
+                .client{
+                    &:extend(.card .text .team-pos all);
+                    line-height: 18px;
+                    display: table-cell;
+                    vertical-align: middle;
+                    text-align: center;
+                    color: @green-dark-1;
+                }
+            }
+            .media{
+                .opacity(1) !important;      
+                img{
+                    height: 147px;
+                    padding: 10px;
+                    .opacity(1) !important;      
+                }
+            }
+            &:hover{
+                .text{
+                    .opacity(1);                
+                    background-color: @green-dark-1;
+                    .transition(background ease-out 0.2s);
+                    .client{
+                        color: @white;
+                        .transition(color ease-out 0.2s);
+                    }
+                }
+
+            }
+        }
+        &.active{
+            .text{
+                .opacity(1);                
+                background-color: @green-dark-1;
+                .transition(background ease-out 0.2s);
+                .client{
+                    color: @white;
+                    .transition(color ease-out 0.2s);
+                }
+            }
+        }
+
+    }
+}
+.our-work-desc-row {
+    &:extend(.team-desc-row all);
+    .desc-title{
+        &:after{
+            width: 50px;
+            top: 1px;
+        }
+    }
+}

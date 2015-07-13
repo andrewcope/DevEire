@@ -1,0 +1,66 @@
+//
+// Variables
+// --------------------------------------------------
+@import "colors.less";
+@import "spacing.less";
+@import "typography.less";
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Number of columns in the grid.
+@grid-columns:              12;
+// Padding between columns. Gets divided in half for the left and right.
+@grid-gutter-width:     30px;
+@gutter-mobile:         20px;
+//** Site padding
+// @site-gutter-width:         @space;
+//** Padding between columns. Gets divided in half for the left and right.
+// @grid-gutter-width:         @space-double;
+
+// timing transitions
+@transition-overlay-hover:  0.15s;
+@transition-short:          0.20s;
+@transition-medium:         0.25s;
+@transition-long:           0.30s;
+
+//*******************
+// GRID HELPER WIDTHS
+//*******************
+
+// @container-wide     : 1280px;
+// @container-desktop	: 960px;
+// @container-tablet   : 780px;
+// @container-small    : 100%;
+// @container-small-min	  : 320px;
+
+@container-aside   : 320px;
+@container-aside-mobile  : 270px;
+
+
+// === Grid ===
+
+// Padding between columns. Gets divided in half for the left and right.
+@grid-gutter-width:     30px;
+@gutter-mobile:         20px;
+@gutter-top:            40px;
+// Small screen / tablet site width
+// This is between @screen-sm-min and @screen-md-min widths
+@container-tablet:      (720px + @grid-gutter-width);
+
+// Medium screen / desktop
+// This is between @screen-md-min and @screen-lg-min widths
+@container-desktop:     (960px + @grid-gutter-width);
+
+// Large screen / wide desktop
+// If you would like to eliminate this because the designs do not warrant it, just change this to the @container-desktop value
+// @container-large-desktop:      (@container-desktop + @grid-gutter-width);
+@container-large-desktop: (1000px + @grid-gutter-width);
+
+//header
+
+@headHeight: 60px;
+@headHeightMobile: 40px;
+// @gutterWidth 		: 20px;
+// @gutterMobile		: 10px;

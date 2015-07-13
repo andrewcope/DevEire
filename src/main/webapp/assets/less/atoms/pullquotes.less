@@ -1,0 +1,64 @@
+// pull quotes
+//------------
+
+.pullquote {
+
+    background: #f9f9f9;
+    border-left: @space-three-quarter solid @green-dark-1;
+    margin-bottom: @space-double;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+    p {
+        padding: @space-half 0;
+        margin: 0 !important;
+        display: inline;
+    }
+
+    &:before{
+        color: @green-dark-1;
+        content: open-quote;
+        vertical-align: -0.4em;
+        .type-scale(5);
+        line-height: @space;
+    }
+
+
+    &-left:extend(.pullquote all){
+        .pull-left;
+        width:50%;
+        .text-left;
+        margin: @space-double @space-double @space-double -@space-quad;
+    }
+    &-right:extend(.pullquote all){
+        .pull-right;
+        width:50%;
+        .text-right;
+        margin: @space-double -@space-quad @space-double @space-double;
+    }
+}
+@media @mq-only-tablet { 
+    .pullquote {
+        .type-scale(2);
+    }   
+}
+@media @mq-only-mobile{
+    .pullquote {
+        padding:@space-and-half;
+        margin-bottom: @space-and-half;
+        &:before,
+            &:after{
+            font-size: 65px;
+            .square(30px);            
+        }
+
+        &-left:extend(.pullquote all), &-right:extend(.pullquote all){
+            float: none;
+            display: block;
+            .text-center;
+            margin: 0;
+            margin-bottom: @space-and-half;
+            width: 100%;
+        }
+
+    }
+}

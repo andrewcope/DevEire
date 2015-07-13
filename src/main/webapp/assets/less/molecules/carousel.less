@@ -1,0 +1,35 @@
+// dev-carousel
+// =======
+
+.dev-carousel{
+    margin-bottom: 0;
+    .slick-next,
+    .slick-prev {
+        position: absolute;
+        top: 50%;
+        border: none;
+        background: transparent;
+        .square(80px);
+        line-height: 80px;
+        outline: none;
+        .text-center;        
+        margin-top: -50px;
+        font-size: 0;
+        .opacity(1);
+        &:extend(.lk-default all);
+        &.slick-disabled {
+            opacity: 0.5;
+            .disabled;
+        }
+        &:before{
+            color:inherit;
+            font-size: 80px;
+        }
+    }
+    .slick-next:extend(.icon.icon-next all){
+        right: 15px;
+    }
+    .slick-prev:extend(.icon.icon-prev all){
+        left: 15px;
+    }
+}

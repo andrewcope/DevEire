@@ -1,0 +1,178 @@
+//
+// Typography
+// --------------------------------------------------
+html,
+body {
+    .type-scale(0);
+    .font-primary;
+    color: @text-color;
+    background-color: @body-bg;
+    /*overflow-x: hidden;*/
+    margin-top: 30px;
+    height: 100%;
+    @media only screen and (max-width: 767px) {
+        .type-scale(-1);
+    }
+    &.open{
+        *{
+            /*z-index: 1 !important;*/
+        }
+    }
+}
+
+
+// Headings
+// -------------------------
+
+h1 { font-size: @font-size-h1; font-weight: @font-weight-default;}
+h2 { font-size: @font-size-h2; font-weight: @font-weight-default; }
+h3 { font-size: @font-size-h3; font-weight: @font-weight-default; }
+h4 { font-size: @font-size-h4; font-weight: @font-weight-default; }
+h5 { font-size: @font-size-h5; font-weight: @font-weight-default; }
+h6 { font-size: @font-size-h6; font-weight: @font-weight-default; }
+
+.font-primary {
+    font-family: @font-family-base;
+    font-weight: @font-weight-book;
+}
+
+.font-primary-light {
+    font-family: @font-family-base;
+    font-weight: @font-weight-light;
+}
+
+.font-primary-bold {
+    font-family: @font-family-base;
+    font-weight: @font-weight-bold;
+}
+
+
+.font-secondary {
+    font-family: @font-family-secondary;
+    font-weight: @font-weight-book;
+}
+
+.font-secondary-light {
+    font-family: @font-family-secondary;
+    font-weight: @font-weight-light;
+}
+
+.font-secondary-bold {
+    font-family: @font-family-secondary;
+    font-weight: @font-weight-bold;
+}
+.font-serif-italic {
+    font-family: @font-family-serif;
+    font-weight: @font-weight-book;
+    font-style: italic;
+}
+/*.lead-blurb-text{
+    font-size: 48px;
+    line-height: 54px;
+    .font-secondary-bold;
+}*/
+.header1 {
+    .type-scale(6);
+    margin: 0 0 @space-half;
+}
+.header2 {
+    .type-scale(4);
+    margin: 0 0 @space-half;
+    font-weight: @font-weight-light;
+}
+.header3 {
+    .type-scale(2);
+    margin: 0 0 @space-half;
+}
+.header4 {
+    .type-scale(1);
+    margin: 0 0 @space-half;
+}
+.header5 {
+    .type-scale(0);
+    margin: 0 0 @space-half;
+}
+.header6 {
+    .type-scale(-1);
+    margin: @space-half 0;
+}
+
+// Body text
+// -------------------------
+
+
+p {
+    margin: 0 0 @space-three-quarter;
+    .font-primary-light;
+    .type-scale(1);
+}
+
+.lead {
+    .type-scale(2);
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.table-wrapper{
+    display: table-cell;
+    vertical-align: middle;
+}
+// Emphasis & misc
+// -------------------------
+
+// Ex: 14px base font * 85% = about 12px
+small,
+.small {
+    // .type-scale(-2);
+    color: @gray;
+}
+
+// Undo browser default styling
+cite    { font-style: normal; }
+
+// Alignment
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+
+// color
+.text-primary { color : @brand-primary;}
+
+// .active > a {
+//   pointer-events: none;
+// }
+
+.disabled {
+    color: @gray-light-3;
+    pointer-events:none;
+}
+
+ul > ul {
+    margin-left: @space-quarter;
+    margin-bottom: 0;
+}
+
+
+// Misc
+// ------------------------
+
+// Font Weights
+.font-weight {
+    &-xl {
+        font-weight: @font-weight-xl;
+    }
+    &-light {
+        font-weight: @font-weight-light;
+    }
+    &-book {
+        font-weight: @font-weight-book;
+    }
+    &-bold {
+        font-weight: @font-weight-bold;
+    }
+}
+
+// Generate static type scale classes
+.make-type-scale(@ts-low, @ts-high);
+  

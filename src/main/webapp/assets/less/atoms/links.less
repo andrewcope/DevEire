@@ -1,0 +1,42 @@
+// Links
+//-------------------------
+
+//colors
+a {
+    text-transform: inherit;
+}
+a,
+.lk-default {
+    color: @link-color;
+    transition: opacity .2s step-end,background .2s,color .2s,border .2s;
+    &:hover {
+        color: @link-hover-color;
+    }
+}
+
+//inverse links for dark backgrounds
+.lk-inverse {
+    color: @link-inverse-color;
+    &:hover {
+        color: @link-hover-inverse-color
+    }
+}
+
+
+
+.lk-chevron{
+    &:after{
+        .fa;
+        content: @fa-var-chevron-circle-right;
+        margin-left: 5px;
+        position: relative;
+        top: 1px;
+    }
+}
+//inverse links for dark backgrounds
+.lk-inverse-alt {
+    color: @link-inverse-alt-color;
+    &:hover {
+        color: @link-hover-inverse-alt-color;
+    }
+}

@@ -1,0 +1,45 @@
+
+// article
+//============================
+
+.article{
+    &-container{
+        .dev-container;
+        max-width: @container-narrow;
+        margin: auto;
+    }
+    &-row{
+        .dev-row;
+    }
+    &-inner{
+        .dev-column-full;
+    }    
+}
+
+.article-container{
+    .title{
+        .font-primary-bold;
+        .type-scale(3);
+        margin-bottom: @space;
+        &:after{
+            content: '';
+            background: @green-dark-1;
+            display: block;
+            height: 2px;
+            float: none;
+            width: 70px;
+        }
+    }
+    p{
+        margin-bottom: @space-double;
+        a{
+            color: @link-color;
+            text-decoration: none;
+            border-bottom: 1px solid;
+            &:hover{
+                color: @link-hover-color;
+            }
+        }
+    }
+}
+

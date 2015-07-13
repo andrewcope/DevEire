@@ -1,0 +1,20 @@
+{
+  "name": "dev-test",
+  "version": "1.0.0",
+  "dependencies": {    
+    "jquery": "~1.11.0",
+    "jquery-ui": "~1.11.2",
+    "fontawesome": "4.3.0",
+    "less.js": "1.7.3",
+    "bootstrap": "3.3.4",
+    "bsp-utils": "2.0.1",
+    "bsp-share": "perfectsense/brightspot-js-share#2.0.0",
+    "slick": "kenwheeler/slick",
+    "truncate": "gitastrophe/truncate.js",
+    "bridget": "desandro/jquery-bridget",
+    "isotope": "metafizzy/isotope"
+  },
+  "devDependencies": {
+    "requirejs-text": "~2.0.12"
+  }
+}

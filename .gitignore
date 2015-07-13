@@ -1,43 +1,28 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+/target/
 
-# Folder config file
-Desktop.ini
+ops/*
+etc/*
+data/*
+# Require JS Config
+bower_components/
+node/
+node_modules/**
+src/main/webapp/assets/build/
+src/main/webapp/assets/dist/
+src/main/webapp/assets/css/
+src/main/webapp/assets/less/vendor/
+src/main/webapp/assets/js/vendor/
+node_modules/bsp-grunt/node_modules/bower/node_modules/promptly/LICENSE
+src/main/webapp/META-INF/context.xml
+nb-configuration.xml
+.classpath
+.project
+.settings/*
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+# Intellij
+.idea/
+*.iml
+*.iws
+*.class
+overlays/
+src/main/webapp/assets/styles/css/font-awesome-ie7.min.css

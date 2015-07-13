@@ -1,0 +1,62 @@
+//== Colors
+
+
+
+@green-light-1:         #A5B790;
+@green:                 #80b42d;
+@green-dark-1:          #5a6c47;
+
+// Grayscale color definitions that do not match up to a specific brand color and are further
+@black:                 #000;
+@gray-dark-4:           #2c333c;
+@gray-dark-3:           #333333;
+@gray-dark-2:           #666666;
+@gray-dark-1:           #5a5a5a;
+@gray:                  #999999;
+@gray-light-1:          #cccccc;
+@gray-light-1-rgba:     rgba(204, 204, 204, 0.7);
+@gray-light-2:          #f0f0f0;
+@gray-light-3:          #faf9f8;
+@gray-light-4:          #f5f5f5;
+@gray-light-5:          #e4e4e4;
+@white:                 #fff;
+
+// brand colors
+// @brand-primary:         @yellow;
+@brand-primary:         @green-dark-1;
+@brand-secondary:       @green-light-1;
+
+//** Background color for `<body>`.
+@body-bg:               @white;
+@body-bg-alt:           @gray-light-2;
+//** Background color for header.
+@header-bg:             @brand-primary;
+
+//** Global text color on `<body>`.
+@text-color:            @gray-dark-3;
+@text-color-inverse:    @white;
+
+//** Global textual link color.
+@link-color:                @green-dark-1;
+@link-hover-color:          lighten(@green,10%);
+
+@link-alt-color:            @black;
+@link-hover-alt-color:      @green;
+
+@link-inverse-alt-color:        @gray;
+@link-hover-inverse-alt-color:  lighten(@link-inverse-alt-color,10%);
+
+@link-inverse-color:        @white;
+@link-hover-inverse-color:  @green-light-1;
+
+@link-brandsecondary-color:   @brand-secondary;
+@link-hover-brandsecondary-color: darken(@brand-secondary,10%);
+
+.bg{
+    &-green{
+        background: @green-dark-1;
+    }
+    &-green-light{
+        background: @green-light-1;
+    }
+}
