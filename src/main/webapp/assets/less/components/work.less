@@ -1,0 +1,34 @@
+
+// dev-work
+//============================
+
+.our-position-wrapper{
+    .dev-hero{
+        &.generic-hero{
+            .dev-hero-bg{
+                display: none;
+            }
+        }
+    }
+    .our-position{
+        &-container{
+            .dev-container-fluid;
+            background: #2d3237;
+            margin-top: -@space-double;
+            min-height: 300px;
+        } 
+        &-inner{
+            .dev-container;
+            max-width: @container-narrow;
+            margin: auto;
+        }
+        &-row{
+            .dev-row;
+        }
+        &-col{
+            p,h1{
+                color: @white;
+            }
+        }
+    }
+}

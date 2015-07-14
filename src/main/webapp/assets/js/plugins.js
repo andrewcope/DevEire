@@ -22,6 +22,7 @@ define(function (require) {
     require('plugins/modules/team');
     require('plugins/modules/clients');
     require('plugins/modules/gallery-inline');
-
+    require('plugins/modules/work');
+    
     return this;
 });

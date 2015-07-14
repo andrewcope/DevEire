@@ -85,10 +85,22 @@ module.exports = function (grunt) {
                         dest: 'bower/less.js'
                     }
                 ],
+                'jquery-selectboxit': [
+                    {
+                        cwd: 'src/stylesheets',
+                        src: '*.css',
+                        dest: '../less/bower/selectboxit',
+                        expand: true
+                    },
+                    {
+                        src: 'src/javascripts/jquery.selectBoxIt.js',
+                        dest: 'bower/jquery.selectBoxit.js'
+                    }
+                ],
                 'jquery-ui': [
                     {
-                        src: 'jquery-ui.js',
-                        dest: 'bower/jquery-ui.js'
+                        src: 'ui/jquery.ui.widget.js',
+                        dest: 'bower/jquery-ui/ui/jquery.ui.widget.js'
                     },
                     {
                         cwd: 'themes/base',
