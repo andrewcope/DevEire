@@ -1,7 +1,7 @@
 <%@include file="/WEB-INF/common/taglibs.jsp" %>
 
 <footer class="main-footer" id="global-footer">
-<!--    <div class="main-footer-fluid-container">
+    <div class="main-footer-fluid-container">
         <section class="main-footer-container">
             <div class="main-footer-row">
                 <div class="main-footer-inner">
@@ -13,35 +13,8 @@
                             <li>Roselawn House,</li>
                             <li>University Business Complex,</li>
                             <li>National Technology Park,</li>
-                            <li>Limerick,</li>
-                            <li>Ireland</li>
+                            <li>Limerick, Ireland</li>
                         </ul>
-                    </div>
-                    
-                    <div class="footer-dev-col">
-                        <li class="footer-header">Footer Header...</li>
-                        <li class="icon icon-phone">                            
-                            <a class="#" href="tel:+442032177950">+353 (0)61 633 777</a>                            
-                        </li>
-                        <li class="icon icon-mail">   
-                            <a href="mailto:email@deveire.com?subject=Hello!">email@deveire.com</a>                           
-                        </li>
-                        <li class="icon icon-linkedin">   
-                            <a href="https://www.linkedin.com/company/deveire">linkedin/deveire</a>                           
-                        </li>
-                    </div>
-
-                    <div class="footer-dev-col">
-                        <li class="footer-header">Footer Header...</li>
-                        <li class="icon icon-phone">                            
-                            <a class="#" href="tel:+442032177950">+353 (0)61 633 777</a>                            
-                        </li>
-                        <li class="icon icon-mail">   
-                            <a href="mailto:email@deveire.com?subject=Hello!">email@deveire.com</a>                           
-                        </li>
-                        <li class="icon icon-linkedin">   
-                            <a href="https://www.linkedin.com/company/deveire">linkedin/deveire</a>                           
-                        </li>
                     </div>
                     
                     <div class="footer-dev-details">
@@ -59,7 +32,7 @@
                 </div>
             </div>
         </section>
-    </div>-->
+    </div>
     <div class="sub-footer-fluid-container bg-green-light">
         <section class="sub-footer-container">
             <div class="sub-footer-row">

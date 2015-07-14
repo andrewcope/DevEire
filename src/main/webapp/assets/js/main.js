@@ -5,13 +5,11 @@
         paths: {
             'jquery': 'bower/jquery',
             'jqueryui': 'bower/jquery-ui',
-            'bsp-utils': 'bower/bsp-utils',
-            'bridget': 'bower/bridget'
+            'bsp-utils': 'bower/bsp-utils'
         },
         shim: {
             'bower/modal': ['jquery'],
-            'bower/jquery.truncate': ['jquery'],
-            'bower/isotope': ['bridget']
+            'bower/jquery.truncate': ['jquery']
         },
         urlArgs: 'bust=' + (new Date()).getTime(),
         waitSeconds: 15,

@@ -12,12 +12,16 @@ define(function (require) {
 
     require('bsp-utils'); // bsp-utils is pulled in via bower and includes standard utils and the bsp-plugin
     require('bsp-share');
-    require('slick');
+    require('bsp-carousel-plugin');
+    require('bsp-carousel-thumbnav-plugin');
+    require('bsp-share');
+//    require('slick');
 
     require('plugins/modules/stretch-bg');
-    require('plugins/modules/home-dl');
+    require('plugins/modules/dynamic-lead');
     require('plugins/modules/team');
     require('plugins/modules/clients');
-    
+    require('plugins/modules/gallery-inline');
+
     return this;
 });

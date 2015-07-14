@@ -1,0 +1,217 @@
+// gallery
+//----------
+
+.dev-inline-gallery:extend(.gallery all){}
+
+.gallery {
+    width: 100%;
+    position: relative;
+    margin-bottom: @space-double;
+}
+.gallery-stage{
+    margin: 0;
+}
+
+// gallery toolbar
+
+.gallery-toolbar{
+    background: lighten(@black,6.5%);
+    color: @text-color-inverse;
+    position: relative;
+    z-index: 10;
+    padding: @space-three-quarter;
+}
+.gallery-toolbar-btn {
+    &:extend(.lk-inverse);
+    display: block;
+    .square(40px);
+    .border-radius(50%);
+    .type-scale(1);
+    line-height: 40px;
+    background: @gray-dark-3;
+    .text-center;
+    cursor: pointer;
+
+    i{
+        &:before{
+            vertical-align: middle;
+        }
+    }
+    &:hover{
+        background: @brand-primary;
+        color: @text-color-inverse;
+    }
+
+}
+.gallery-toolbar-info:extend(.gallery-toolbar-btn all) {
+    .pull-left;
+}
+.gallery-toolbar-thumb:extend(.gallery-toolbar-btn all) {
+    .pull-right; 
+}
+
+.gallery-toolbar-control{
+    .text-center;
+}
+.gallery-toolbar-control-prev,
+.gallery-toolbar-control-next {
+    &:extend(.gallery-toolbar-btn all);
+    .type-scale(2);
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    line-height: 34px;
+
+    &.slick-disabled {
+        opacity: 0.5;
+        .disabled;
+    }
+}
+// gallery stage
+.gallery-stage {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.gallery-stage-item {
+    position: relative;
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .gallery-stage-item-caption {
+        background: fade(@black,50%);
+        position: absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        padding: @space-three-quarter;
+        .text-center;
+        display: none;
+        color: @text-color-inverse;
+    }
+}
+
+
+// gallery nav
+.gallery-nav {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:60px;
+    background: fade(@black,75%);
+    z-index: -1;
+
+
+    &.front{
+        z-index: 5;
+    }
+    .slick-list {
+        height: 100%;
+        width: 40%;
+        .center-block;
+        .slick-track{
+            height: 100%;
+            /* Internet Explorer 10 */
+            display:-ms-flexbox;
+            -ms-flex-pack:center;
+            -ms-flex-align:center;
+
+            /* Firefox */
+            display:-moz-box;
+            -moz-box-pack:center;
+            -moz-box-align:center;
+
+            /* Safari, Opera, and Chrome */
+            display:-webkit-box;
+            -webkit-box-pack:center;
+            -webkit-box-align:center;
+
+            /* W3C */
+            display:box;
+            box-pack:center;
+            box-align:center;
+            background-color: #3F3F3F;
+        }
+        .slick-slide{
+            height: 100%;
+            > div {
+                height: 33%;
+                .text-center;
+
+                > .gallery-nav-item {
+                    height: 100%;
+                    max-width: 33%;
+                    .text-center;
+                    // width: auto !important;
+                    padding: @space-half;
+                    .fix-inline{
+                        display: block;
+                        height: 100%;
+                        .clearfix;
+                    }
+                    img {
+                        display: block;
+                        height: 100%;
+                        width: auto;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// gallery nav
+.gallery-thumb {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:60px;
+    background: fade(@black,75%);
+    overflow: auto;
+    display: none;
+    z-index: 1;
+/*    z-index: -1;
+
+    &.front{
+        z-index: 5;
+    }*/
+
+    .gallery-thumb-inner {
+        // .bsp-container;
+        // .center-block;
+        padding: @space-half @space-double;
+
+    }
+    .gallery-thumb-item {
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        padding: @space-half;
+
+        img {
+            width: 100px;
+            height: auto;
+        }
+    }
+
+}
+
+@media @mq-only-mobile{
+    .gallery-toolbar-btn {
+        .square(25px);
+        .type-scale(0);
+        line-height: 25px;
+    }
+    .gallery-thumb{
+        bottom: 42px;
+        .gallery-thumb-item{
+            img{
+                width: 75px;
+            }
+        }
+    }
+}

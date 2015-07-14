@@ -5,7 +5,7 @@
 <jsp:include page="/assets/static-html/common/global-header.jsp" />
 
 <%-- Home Dl --%>
-<jsp:include page="/assets/static-html/include/home-dl.jsp" />
+<jsp:include page="/assets/static-html/include/dynamic-lead.jsp" />
 
 <div class="article-container">
     <div class="article-row">

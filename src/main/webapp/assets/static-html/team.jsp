@@ -22,7 +22,7 @@
         <div class="team-row" id="dev-team">
             <!-- Dev Card -->
             
-            <div class="team-card " id="darragh">
+            <div class="team-card circle-card " id="darragh">
                 <div class="media">
                     <img src="http://lorempixel.com/220/220/people/1/">
                 </div>

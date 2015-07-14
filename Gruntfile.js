@@ -52,16 +52,16 @@ module.exports = function (grunt) {
                         expand: true,
                         flatten: false
                     }
-                ],
-                'slick': [
+                ],                
+                'bsp-carousel': [
                     {
-                        cwd: 'slick/',
-                        src: 'slick.css',
-                        dest: '../less/bower/slick',
+                        cwd: 'dist/',
+                        src: 'bsp-carousel.css',
+                        dest: '../less/bower/bsp-carousel',
                         expand: true
                     },
                     {
-                        cwd: 'slick/',
+                        cwd: 'dist/',
                         src: '*.js',
                         dest: '', //root of scripts
                         expand: true
@@ -101,18 +101,6 @@ module.exports = function (grunt) {
                     {
                         src: 'jquery.truncate.js',
                         dest: 'bower/jquery.truncate.js'
-                    }
-                ],
-                'bridget': [
-                    {
-                        src: 'jquery.bridget.js',
-                        dest: 'bower/bridget.js'
-                    }
-                ],
-                'isotope': [
-                    {
-                        src: 'dist/isotope.pkgd.js',
-                        dest: 'bower/isotope.js'
                     }
                 ]
             }

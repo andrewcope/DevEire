@@ -1,12 +1,11 @@
 
-// home dl
+// dynamic lead
 //============================
 
 @maxHeight: 500px;
-
-.dev-carousel-stage{
-    margin-bottom: @space-double;
-    &#dev-lead{
+.dev-carousel{
+    &.dev-dl{
+        margin-bottom: @space-double;
         .carousel-slide{
             max-height: @maxHeight;
             img{
@@ -65,7 +64,6 @@
                     }
                 }
             }
-        }
-
+        } 
     }
 }
