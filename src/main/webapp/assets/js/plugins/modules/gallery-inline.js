@@ -13,12 +13,12 @@ define(function (require) {
         var self = this;
         self.$el = $el;
         self.settings = {
-    		nav: {
+            nav: {
                 themeConfig: {
                     centerMode: true,
                     centerPadding: '0px',
                     focusOnSelect: true,
-                    rows : 3,
+                    rows: 3,
                     slidesPerRow: 3,
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -27,13 +27,13 @@ define(function (require) {
             stage: {
                 themeConfig: {
                     arrows: true,
-                    fade:true,
-                    infinite:false,
-                    prevArrow : self.$el.find('.gallery-toolbar .gallery-toolbar-control-prev'),
-                    nextArrow : self.$el.find('.gallery-toolbar .gallery-toolbar-control-next')
+                    fade: true,
+                    infinite: false,
+                    prevArrow: self.$el.find('.gallery-toolbar .gallery-toolbar-control-prev'),
+                    nextArrow: self.$el.find('.gallery-toolbar .gallery-toolbar-control-next')
                 }
             }
-    	};
+        };
 
         self.init = function () {
 
@@ -43,32 +43,57 @@ define(function (require) {
             self.$btnThumb = self.$el.find('.gallery-toolbar-thumb');
             self.$counter = self.$el.find('.gallery-toolbar-control-count');
             self.$galleryCaption = self.$el.find('.gallery-stage-item-caption');
-            
+
             self.stageCarousel = carousel.init(self.$stage, self.settings.stage);
             self.stageCarousel.bind('beforeChange', self.updateCount);
 
             self.$btnThumb.on('click', function () {
+                if (self.$btnThumb.hasClass('active')) {
+                    self.$btnThumb.removeClass('active');
+                }
+                else {
+                    self.$btnThumb.addClass('active');
+                }
                 if (!self.$thumb.is('.front')) {
                     self.$thumb.addClass('front');
                     self.$thumb.fadeIn();
+                    if (self.$galleryCaption.hasClass('active')) {
+                        self.$galleryCaption.removeClass('active');
+                        self.$galleryCaption.fadeOut();
+                        self.$btnInfo.removeClass('active');
+                    }
                 } else {
-                    self.$thumb.fadeOut(function () {
+                    self.$thumb.fadeOut(function () {                        
                         $(this).removeClass('front').removeAttr('style');
                     });
                 }
             });
 
             self.$btnInfo.on('click', function () {
-                if(self.$galleryCaption.hasClass('active')){
+                if (self.$btnInfo.hasClass('active')) {
+                    self.$btnInfo.removeClass('active');
+                }
+                else {
+                    self.$btnInfo.addClass('active');
+                }
+                if (self.$galleryCaption.hasClass('active')) {
                     self.$galleryCaption.removeClass('active');
                     self.$galleryCaption.fadeOut();
                 }
-                else{
+                else {
                     self.$galleryCaption.addClass('active');
                     self.$galleryCaption.fadeIn();
+                    if (!self.$thumb.is('.front')) {
+
+                    } else {
+                        self.$thumb.fadeOut(function () {
+                            self.$btnThumb.removeClass('active');
+                            $(this).removeClass('front').removeAttr('style');
+                        });
+                    }
                 }
             });
-            
+
             self.$thumb.find('[class$="-item"]').on('click', function (e) {
                 self.goToSlide($(this));
             });
@@ -79,7 +104,7 @@ define(function (require) {
                     slide = self.$stage.find('[data-slide-id="' + id + '"]');
 
             self.stageCarousel.goTo(slide.index());
-            
+
             self.$thumb.fadeOut(function () {
                 $(this).removeClass('front').removeAttr('style');
             });

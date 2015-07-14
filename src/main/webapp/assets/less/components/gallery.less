@@ -31,6 +31,9 @@
     background: @gray-dark-3;
     .text-center;
     cursor: pointer;
+    &.active{
+        background: @green-dark-1;
+    }
 
     i{
         &:before{
@@ -174,15 +177,9 @@
     overflow: auto;
     display: none;
     z-index: 1;
-/*    z-index: -1;
-
-    &.front{
-        z-index: 5;
-    }*/
 
     .gallery-thumb-inner {
-        // .bsp-container;
-        // .center-block;
+        .text-center;
         padding: @space-half @space-double;
 
     }
