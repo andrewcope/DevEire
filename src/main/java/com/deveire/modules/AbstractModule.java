@@ -15,16 +15,6 @@ public abstract class AbstractModule extends Content implements Module {
     @Required
     @Indexed(unique = true)
     private String internalName;
-    
-    private String subTitle;
-
-    public String getSubTitle() {
-        return subTitle;
-    }
-
-    public void setSubTitle(String subTitle) {
-        this.subTitle = subTitle;
-    }
 
     public void setInternalName(String internalName) {
         this.internalName = internalName;
