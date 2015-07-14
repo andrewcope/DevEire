@@ -98,7 +98,9 @@
         }
 
     }
+
 }
+
 .our-work-desc-row {
     &:extend(.team-desc-row all);
     .desc-title{
@@ -107,4 +109,22 @@
             top: 1px;
         }
     }
+}
+
+.our-work-list{
+    section{
+        margin-bottom: @space-double;
+        .block-client{
+            &-image-wrapper{
+                max-width: 300px;
+            }
+            &-title{
+                &:extend(.article-container .title all);
+            }
+            &-blurb{
+                margin-left: @space;
+            }
+        }
+    }
+
 }
