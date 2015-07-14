@@ -3,7 +3,31 @@
 <jsp:include page="/WEB-INF/common/startPage.jsp" />
 <%-- Global header --%>
 <jsp:include page="/assets/static-html/common/global-header.jsp" />
-<div class="our-work">
+
+<div class="our-position-wrapper">
+    <%-- Generic Lead --%>
+    <jsp:include page="/assets/static-html/include/generic-lead.jsp" />
+
+    <div class="our-position-container">
+        <div class="our-position-inner">
+            <div class="our-position-col">
+
+                <h1>This is a title</h1>
+                <p>This is a blurb</p>
+
+                <div class="our-position-dd-filter" data-bsp-work-dd>
+                    <form action="#" method="post" id="vacancy-filter">
+                        <select name="filter" class="dev-select">
+                            <option value="">Vacancies By Department</option>
+                            <option value="backend">Backend (3)</option>
+                            <option value="frontend">Frontend (2)</option>
+                            <option value="qa">QA (1)</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="article-container">
         <div class="article-row">
             <div class="article-inner">
@@ -13,71 +37,6 @@
                 <jsp:include page="/assets/static-html/include/blockquote.jsp" />
 
                 <p>Cras scelerisque eleifend sapien, sit <a href="#">consectetur adipiscing</a> aliquam eget. Nulla ultricies mi accumsan placerat efficitur. Nulla facilisi. Maecenas pharetra mi eu neque pulvinar, consectetur dapibus lorem venenatis. Vestibulum pretium turpis vitae dui scelerisque, sed porta ipsum sodales. Sed laoreet justo a aliquam elementum. Aenean id congue diam. In eu est sed tellus malesuada consectetur ac in arcu. Vivamus turpis sem, varius ut ex id, interdum consequat lacus. Praesent et fringilla diam, et convallis nisl. Suspendisse tincidunt, tortor sed scelerisque tristique, sem felis tristique ante, vitae porta mauris nunc non sapien.</p>
-            </div>
-        </div>
-    </div>
-    <div class="our-work-fluid-container">
-        <div class="our-work-container" data-bsp-dev-work>
-            <div class="our-work-row">
-                <div class="our-work-wrapper">
-                    <!-- Dev Card -->
-
-                    <div class="our-work-card">
-                        <div class="media">
-                            <img src="/assets/images/work/dcp.png">
-                        </div>
-                        <div class="text">
-                            <h5 class="client">Drvie Chip &amp Putt</h5>
-                        </div>                
-                    </div>  
-                    
-                    <div class="our-work-card">
-                        <div class="media">
-                            <img src="/assets/images/work/coke.png">
-                        </div>
-                        <div class="text">
-                            <h5 class="client">The Coca-Cola Company</h5>
-                        </div>                
-                    </div>  
-                    
-                    <div class="our-work-card">
-                        <div class="media">
-                            <img src="/assets/images/work/cisco.jpeg">
-                        </div>
-                        <div class="text">
-                            <h5 class="client">Cisco</h5>
-                        </div>                
-                    </div>  
-                    
-                    <div class="our-work-card">
-                        <div class="media">
-                            <img src="/assets/images/work/emt.png">
-                        </div>
-                        <div class="text">
-                            <h5 class="client">Walmart</h5>
-                        </div>                
-                    </div> 
-
-                    <div class="our-work-card">
-                        <div class="media">
-                            <img src="/assets/images/work/usnews.png">
-                        </div>
-                        <div class="text">
-                            <h5 class="client">U.S. News & World Report</h5>
-                        </div>                
-                    </div>  
-
-                    <div class="our-work-card">
-                        <div class="media">
-                            <img src="/assets/images/work/mit.jpeg">
-                        </div>
-                        <div class="text">
-                            <h5 class="client">MIT Sloan Executive Education</h5>
-                        </div>                
-                    </div>  
-
-
-                </div>
             </div>
         </div>
     </div>

@@ -3,7 +3,6 @@
     "version": "1.0.0",
     "dependencies": {
         "jquery": "~1.11.0",
-        "jquery-ui": "~1.11.2",
         "fontawesome": "4.3.0",
         "less.js": "1.7.3",
         "bootstrap": "3.3.4",
@@ -13,7 +12,9 @@
         "truncate": "gitastrophe/truncate.js"
     },
     "devDependencies": {
-        "requirejs-text": "~2.0.12"
+        "requirejs-text": "~2.0.12",
+        "jquery-selectboxit": "*",
+        "jquery-ui": "~1.10.0"
     },
     "ignore": [
         "**/.*",

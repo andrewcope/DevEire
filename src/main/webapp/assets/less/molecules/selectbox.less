@@ -1,0 +1,33 @@
+//
+// Molecule / Selectbox
+// ----------------------
+
+.dev-select{
+    background: @white;
+    &.selectboxit{
+        .border-radius(0px);
+        .selectboxit-arrow-container{
+            .selectboxit-arrow{
+                border: 0;
+                top: 0px;
+                right: 0;  
+                left: -10px;
+                line-height: 30px;
+                &:before{  
+                    .fa;          
+                    content: @fa-var-chevron-down;            
+                }
+            }
+        }
+        &.dropup{
+            .selectboxit-arrow-container{
+                .selectboxit-arrow{
+                    &:before{  
+                        .fa;          
+                        content: @fa-var-chevron-up;            
+                    }
+                }
+            }
+        }
+    }
+}
