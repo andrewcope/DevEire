@@ -31,6 +31,18 @@
     &-card-outer{
         &:extend(.team-card all); 
         .make-sm-column(4, 20px);
+        @media @mq-only-mobile{
+            width: 50%;
+            display: inline;
+            float: left;
+        }
+        @media @mq-only-small-mobile{
+            width: 320px;
+            display: block;
+            float: none;
+            margin: auto;
+            margin-bottom: 20px;
+        }
         border: none;
         height: 200px;
         background: transparent;
