@@ -7,7 +7,8 @@ define(function (require) {
 
     var $ = require('jquery'),
             bsp_utils = require('bsp-utils'),
-            carousel = require('bsp-carousel');
+            carousel = require('bsp-carousel'),
+            utils = require("util");
 
     var DynamicLead = function ($el) {
         var self = this;
@@ -32,8 +33,19 @@ define(function (require) {
 
             // init both carousels
             self.stageCarousel = carousel.init(self.$stage, self.settings.stage);
-            self.stageCarousel.bind('beforeChange', self.textFadeOut);
-            self.stageCarousel.bind('afterChange', self.textFadeIn);
+
+            $(window).bind('resizeEnd', function () {
+                if (!utils.dimensions.isMobile()) {
+                    self.stageCarousel.bind('beforeChange', self.textFadeOut);
+                    self.stageCarousel.bind('afterChange', self.textFadeIn);
+                }
+            });
+
+            if (!utils.dimensions.isMobile()) {
+                self.stageCarousel.bind('beforeChange', self.textFadeOut);
+                self.stageCarousel.bind('afterChange', self.textFadeIn);
+            }
+
         }
         self.textFadeOut = function () {
             self.$text = self.$stage.find('.carousel-content');

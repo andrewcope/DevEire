@@ -16,6 +16,10 @@ body {
     &.nav-open{
         overflow-y: hidden;
     }
+    @media @mq-only-mobile{
+        .type-scale(-1);
+        margin-top: 25px;
+    }
 }
 
 
@@ -173,4 +177,4 @@ ul > ul {
 
 // Generate static type scale classes
 .make-type-scale(@ts-low, @ts-high);
-  
+

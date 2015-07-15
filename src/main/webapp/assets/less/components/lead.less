@@ -6,8 +6,10 @@
 .dev-carousel{
     &.dev-dl{
         margin-bottom: @space-double;
-        .carousel-slide{
-            max-height: @maxHeight;
+        .carousel-slide{            
+            @media @mq-md{
+                max-height: @maxHeight;
+            }
             img{
                 max-width: 100%;
                 height: auto;               
@@ -19,24 +21,47 @@
             //slide container
             .carousel-container{
                 .dev-container;
-                top: 0px;
-                left: 0;
-                right: 0;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-            }
-            .carousel-content{
-                .make-sm-column(4);
-                padding: 0;
-                background: rgba(255,255,255,0.9);
-                min-height: 380px;
-                .pull-right;
-                .carousel-content-inner{        
+                width: 100% !important;
+                max-width: @container-large-desktop;
+                @media @mq-md{
+                    top: 0;
+                    left: 0;
+                    right: 0;
                     position: absolute;
                     top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
+                    transform: translateY(-50%);  
+                }
+
+            }
+            .carousel-content{
+                /*.make-md-column(4);*/  
+                right: 0px;
+                position: relative;
+                width: 300px;
+                padding: 0;
+                @media @mq-md{
+                    .pull-right;
+                    min-height: 380px;
+                    background: rgba(255,255,255,0.9);       
+                }
+                @media @mq-only-desktop{
+                    right: 40px;
+                }
+                @media @mq-only-tablet{
+                    width: 300px;
+                    min-height: 300px;
+                    right: 50px;
+                }
+                @media @mq-only-mobile{
+                    margin: 0 auto;
+                }
+                .carousel-content-inner{ 
+                    @media @mq-md{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }   
                     .text-center;
                     width: 100%;
                     padding: @space-double;
@@ -66,4 +91,12 @@
             }
         } 
     }
+    .slick{
+        &-next, &-prev{
+            @media @mq-only-mobile{
+                display: none !important; 
+            }
+        }
+    }
 }
+

@@ -17,6 +17,12 @@ define(function (require) {
             self.$mobileNav = $("#mobile-nav");
             self.$globalHeader = $("#global-header");
             self.$mobileNavActive = true;
+            
+            self.$imgHeight = $('.carousel-bg-img img').height();
+            self.$dlBtnNext = $('.slick-next');
+            self.$dlBtnPrev = $('.slick-prev');
+            console.log(self.$imgHeight);
+            
 
             $(window).bind('resizeEnd', function () {
                 if (!utils.dimensions.isMobile()) {
@@ -28,6 +34,8 @@ define(function (require) {
 
             if (utils.dimensions.isMobile()) {
                 self.iconToggle();
+                self.$dlBtnNext.css('left', 200);
+                self.$dlBtnPrev.css('left', 400);
                 console.log('mobile');
             }
         };
