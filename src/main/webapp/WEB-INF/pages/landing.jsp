@@ -1,9 +1,15 @@
+<%@ page import="com.deveire.utils.DeveireUtils" %>
+
+<%
+    pageContext.setAttribute("gHeader", DeveireUtils.getSiteSettings().getHeader());
+    pageContext.setAttribute("gFooter", DeveireUtils.getSiteSettings().getFooter());
+%>
+
 <%@include file="/WEB-INF/common/taglibs.jsp"%>
 <%-- Global start --%>
 <jsp:include page="/WEB-INF/common/startPage.jsp" />
-<%-- Global header --%>
-<jsp:include page="/assets/static-html/common/global-header.jsp" />
-
+<%-- Home header --%>
+<cms:render value="${gHeader}"/>
 <%-- Home Dl --%>
 <jsp:include page="/WEB-INF/module/home-dl.jsp" />
 
@@ -42,7 +48,7 @@
 </div>
 
 <%-- Global footer --%>
-<jsp:include page="/assets/static-html/common/global-footer.jsp" />
+<cms:render value="${gFooter}"/>
 
 <%-- Global end --%>
 <jsp:include page="/WEB-INF/common/endPage.jsp" />

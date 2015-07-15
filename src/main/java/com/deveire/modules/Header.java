@@ -9,14 +9,13 @@ import com.psddev.cms.db.Content;
 import com.psddev.cms.db.Renderer;
 import com.psddev.dari.db.Recordable.Embedded;
 
-@Renderer.Path("/WEB-INF/deveire/common/globalHeader.jsp")
+@Renderer.Path("/WEB-INF/common/global-header.jsp")
 public class Header extends Content {
 
     private String name;
-
-    private List<LinkedImage> socialUrls;
     private List<HeaderItem> headerItems;
     private Image logo;
+    private Link logoLink;
 
     public Image getLogo() {
         return logo;
@@ -42,14 +41,14 @@ public class Header extends Content {
         this.name = name;
     }
 
-    public List<LinkedImage> getSocialUrls() {
-        return socialUrls;
+    public Link getLogoLink() {
+        return logoLink;
     }
 
-    public void setSocialUrls(List<LinkedImage> socialUrls) {
-        this.socialUrls = socialUrls;
+    public void setLogoLink(Link logoLink) {
+        this.logoLink = logoLink;
     }
-    
+
     @Embedded
     public static class HeaderItem extends Content {
         
