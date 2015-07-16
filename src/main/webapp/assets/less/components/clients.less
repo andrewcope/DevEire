@@ -21,6 +21,9 @@
     &-row{
         .make-row(20px);
         position: relative;
+        @media @mq-only-mobile{
+            .text-center;
+        }
     } 
     &-card-outer{
         /*.make-md-column(3, 20px);*/
@@ -30,18 +33,23 @@
     }
     &-card-outer{
         &:extend(.team-card all); 
-        .make-sm-column(4, 20px);
+        /*.make-sm-column(4, 20px);*/
+        .square(220px);
+        float: left;
+        display: inline;
+        margin-left: 10px;
+        margin-right: 10px;
+        transition: 1s ease;
         @media @mq-only-mobile{
-            width: 50%;
-            display: inline;
-            float: left;
+            float: none;
+            display: inline-block;
         }
         @media @mq-only-small-mobile{
-            width: 320px;
-            display: block;
-            float: none;
-            margin: auto;
-            margin-bottom: 20px;
+            /*            width: 320px;
+                        display: block;
+                        float: none;
+                        margin: auto;
+                        margin-bottom: 20px;*/
         }
         border: none;
         height: 200px;

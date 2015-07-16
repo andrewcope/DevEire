@@ -40,7 +40,10 @@ define(function (require) {
                     clickTrigger || cardInit(t);
                 });
                 var activeId = "#" + this.getAttribute('id');
-                $('html,body').animate({scrollTop: $(activeId).offset().top - 65}, 500);
+
+                if (self.$cardWrapper.hasClass('active')) {
+                    $('html,body').animate({scrollTop: $(activeId).offset().top - 65}, 500);
+                }
             };
             //r
             var cardInit = function ($el) {

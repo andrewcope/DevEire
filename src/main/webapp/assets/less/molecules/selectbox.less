@@ -3,8 +3,11 @@
 // ----------------------
 
 .dev-select{
-    background: @white;
-    &.selectboxit{
+
+    .selectboxit{
+        background: #24282c;
+        color: @white;
+        border: 1px solid #606467;
         .border-radius(0px);
         .selectboxit-arrow-container{
             .selectboxit-arrow{
@@ -29,5 +32,44 @@
                 }
             }
         }
+        &.selectboxit-btn{
+            &.selectboxit-enabled{
+                &:hover, 
+                    &:focus{
+                    background: #24282c;
+                    color: @white;
+                    border: 1px solid #606467;
+                } 
+            }
+        }
     }
+    &:hover{
+
+    }
+    .selectboxit-list{
+        background: #24282c;
+        color: @white;
+        border-radius: 0;
+        border: 1px solid #606467;
+        > .selectboxit-focus{
+            > .selectboxit-option-anchor{
+                color: @white;
+                background-image: none;
+                background-color: @green-dark-1;
+            }
+        }
+    }
+    .selectboxit-container{
+        *{
+            .font-primary-light;
+            color: @white;
+        }
+    }
+    .selectboxit-option-first {
+        border-radius: 0;
+    }
+    .selectboxit-options{
+        /*display: block !important;*/
+        border-top: 0;
+    } 
 }

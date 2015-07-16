@@ -16,14 +16,37 @@
                 <p>This is a blurb</p>
 
                 <div class="our-position-dd-filter" data-bsp-work-dd>
-                    <form action="#" method="post" id="vacancy-filter">
-                        <select name="filter" class="dev-select">
+                    <form action="#" method="post" id="vacancy-filter" class="dev-select">
+                        <select name="filter">
                             <option value="">Vacancies By Department</option>
+                            <option value="all">All Vacancies</option>
                             <option value="backend">Backend (3)</option>
                             <option value="frontend">Frontend (2)</option>
                             <option value="qa">QA (1)</option>
                         </select>
                     </form>
+                    <div class="jobs-list jobs-list--filterable" id="jobs-list">
+                        <ul class="jobs-list__list">
+                            <li class="list-item" data-filter="backend">
+                                <a href="http://wearefriday.com/wants/senior-delivery-manager">
+                                    <span class="jobs-list__title">Senior Delivery Manager</span><span class="jobs-list__icon">»</span>
+                                    <span class="jobs-list__meta">Permanent</span>
+                                </a>
+                            </li>
+                            <li class="list-item" data-filter="frontend">
+                                <a href="http://wearefriday.com/wants/senior-frontend-engineer">
+                                    <span class="jobs-list__title">Senior Frontend Engineer</span><span class="jobs-list__icon">»</span>
+                                    <span class="jobs-list__meta">Permanent</span>
+                                </a>
+                            </li>
+                            <li class="list-item" data-filter="qa">
+                                <a href="http://wearefriday.com/wants/sitecore-engineer">
+                                    <span class="jobs-list__title">Sitecore Engineer</span><span class="jobs-list__icon">»</span>
+                                    <span class="jobs-list__meta">Permanent</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

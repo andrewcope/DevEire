@@ -30,23 +30,35 @@ define(function (require) {
 
         };
 
-        self.selectbox = function () {
+        self.selectbox = function () {            
+            self.$filter = $('.our-position-dd-filter').find(".list-item");
+            self.$filter.hide();
+            
             self.$select.selectBoxIt({
                 showEffect: "slideDown",
-                hideEffect: "slideUp"
+//                hideEffect: "slideUp",
+                showFirstOption: false
             });
             self.$select.bind({
-                // Binds to the 'open' event on the original select box
                 "open": function () {
-                    // Adds the Twitter Bootstrap 'dropup' class to the drop down
                     $(this).data("selectBox-selectBoxIt").dropdown.addClass("dropup");
                 },
-                // Binds to the 'close' event on the original select box
                 "close": function () {
-                    // Removes the Twitter Bootstrap 'dropup' class from the drop down
                     $(this).data("selectBox-selectBoxIt").dropdown.removeClass("dropup");
                 }
+            });
+            self.$select.on("change", function () {
+                self.$selectedVal = $(this).val();
 
+                self.$filter.each(function () {
+                    if ($(this).attr("data-filter") === self.$select.val()) {
+                        self.$filter.hide();
+                        $(this).fadeIn();
+                    }
+                    if(self.$select.val() === 'all'){
+                        self.$filter.fadeIn();
+                    }
+                });
             });
         };
     };
