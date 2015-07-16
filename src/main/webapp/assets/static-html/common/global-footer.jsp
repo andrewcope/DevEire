@@ -8,8 +8,7 @@
                     <div class="footer-dev-address">
                         <a href="/" class="footer-logo"><img src="/assets/images/logo-no-txt.png"></a>
                         <ul class="address-list">
-                            <li class="footer-header">Where Are We...</li>
-                            <li>DevEire LTD</li>
+                            <li class="footer-header">Find Us</li>
                             <li>Roselawn House,</li>
                             <li>University Business Complex,</li>
                             <li>National Technology Park,</li>
@@ -18,15 +17,15 @@
                     </div>
                     
                     <div class="footer-dev-details">
-                        <li class="footer-header">Get in touch...</li>
-                        <li class="icon icon-phone">                            
-                            <a class="#" href="tel:+442032177950">+353 (0)61 633 777</a>                            
+                        <li class="footer-header">Get in touch</li>
+                        <li>                            
+                            <span>Call Us:</span><a class="#" href="tel:+442032177950">+353 (0)61 633 777</a>                            
                         </li>
-                        <li class="icon icon-mail">   
-                            <a href="mailto:email@deveire.com?subject=Hello!">email@deveire.com</a>                           
+                        <li>   
+                            <span>Email Us:</span><a href="mailto:email@deveire.com?subject=Hello!">email@deveire.com</a>                         
                         </li>
-                        <li class="icon icon-linkedin">   
-                            <a href="https://www.linkedin.com/company/deveire">linkedin/deveire</a>                           
+                        <li>   
+                            <span>Linkedin:</span><a href="https://www.linkedin.com/company/deveire">linkedin/deveire</a>                           
                         </li>
                     </div>
                 </div>

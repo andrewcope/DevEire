@@ -8,7 +8,7 @@
     .sub-footer{
         &-fluid-container{
             .dev-container-fluid;
-            background: @green-dark-1;
+            background: #2d3237;
         }
         &-container{
             .dev-container;
@@ -22,7 +22,7 @@
     }   
     .main-footer-inner{
         padding-top: @space;
-        padding-bottom: @space;
+        /*padding-bottom: @space;*/
     }
 
     .sub-footer-inner{
@@ -35,21 +35,6 @@
             margin: 0;
         }
     }
-
-    .main-footer-map{        
-        position: relative;
-        top: -30px;
-        .pull-left;        
-        a{
-            display: inline-block;
-        }
-        .map{
-            max-width: 180px;
-            height: auto;
-            display: block;
-            border: 1px solid @green-dark-1;
-        }
-    }
     .footer-dev{
         &-details,
         &-address,
@@ -60,10 +45,30 @@
         &-details{
             .pull-right;
             li{
+                padding-bottom: 10px;
                 a{
                     color: @white;
                     padding-left: 5px;
+                    &:hover{
+                        color: @green-dark-1;
+                    }
                 }
+                &.icon{
+                    &:before{
+                        .square(20px);
+                        background-color: @green-dark-1;
+                        .text-center;
+                        position: relative;
+                        padding-top: 3px;
+                        padding-bottom: 0px;
+                        margin-bottom: 6px;
+                    }
+                }
+            }
+            span{
+                .text-uppercase;
+                min-width: 90px;
+                display: inline-block;
             }
         }
         &-address{
@@ -85,6 +90,34 @@
         display: inline-block;
         .font-primary-bold;
         letter-spacing: 0.025em;
+        padding-bottom: 0px !important;
+    }
+    .footer-logo{
+        .square(120px);
+        background-color: @green-dark-1;
+        display: inline-block;
+        .text-center;
+        position: relative;
+        top: -40px;
+        border: 1px solid #2d3237;
+        margin-right: @space;
+        img{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: 0;
+            right: 0;
+            .transition(1s ease);
+        }
+        &:hover{
+            img{
+                -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                transform: scale(1.1);
+                .transition(1s ease);
+            }
+        }
     }
 
 
