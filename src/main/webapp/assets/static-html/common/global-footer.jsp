@@ -6,7 +6,7 @@
             <div class="main-footer-row">
                 <div class="main-footer-inner">
                     <div class="footer-dev-address">
-                        <a href="/" class="footer-logo"><img src="/assets/images/logo-no-txt.png"></a>
+                        <a href="https://www.google.ie/maps/@52.673167,-8.553289,3a,75y,325.21h,80.3t/data=!3m6!1e1!3m4!1sYliGcSZUtOlM1dMbXWN35Q!2e0!7i13312!8i6656" class="footer-logo"><img src="/assets/images/logo-no-txt.png"></a>
                         <ul class="address-list">
                             <li class="footer-header">Find Us</li>
                             <li>Roselawn House,</li>
@@ -19,7 +19,7 @@
                     <div class="footer-dev-details">
                         <li class="footer-header">Get in touch</li>
                         <li>                            
-                            <span>Call Us:</span><a class="#" href="tel:+442032177950">+353 (0)61 633 777</a>                            
+                            <span>Call Us:</span><a class="#" href="tel:+353061633777">+353 (0)61 633 777</a>                            
                         </li>
                         <li>   
                             <span>Email Us:</span><a href="mailto:email@deveire.com?subject=Hello!">email@deveire.com</a>                         
