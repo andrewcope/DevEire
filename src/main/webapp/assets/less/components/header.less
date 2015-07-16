@@ -179,8 +179,22 @@
             display: none;
             .footer-dev-details{
                 position: absolute;
-                bottom: 0;
-                right: 30px;
+                bottom: 10px;
+                right: 0;
+                left: 0;
+                text-align: center;
+                li{
+                    padding: 0 8.75px;
+                    .text-uppercase;
+                    display: block;
+                    .font-primary-light;
+                    font-size: 15px;
+                    line-height: 30px;
+                    max-height: none;
+                    .transition(all 0.2s);
+                    position: relative;
+                    color: @green-dark-1;
+                }
             }
             .header-nav{
                 li{
@@ -190,6 +204,13 @@
                     padding-right: 5px;
 
                 }
+            }
+            .footer-logo{
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                background-color: @green-dark-1;
+                .square(100px);
             }
         }
         #global-nav{

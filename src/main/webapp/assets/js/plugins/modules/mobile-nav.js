@@ -22,7 +22,7 @@ define(function (require) {
                 if (!utils.dimensions.isMobile()) {
                     if (self.$mobileNavActive === true)
                         self.mobileNavReset();
-                        console.log('reset');
+                    console.log('reset');
                 }
             });
 
@@ -41,9 +41,21 @@ define(function (require) {
         };
 
         self.moblileFooterCopy = function () {
-            self.$footerClone = $('#global-footer').find('.footer-dev-details');
-            self.$footerClone.clone();
-            self.$mobileNav.append(self.$footerClone);
+
+            self.$footerCopy = $('#global-footer').find('.footer-dev-details');
+            self.$footerClone = self.$footerCopy.clone();
+
+            //logo clone
+//            self.$footerLogo = $('#global-footer').find('.footer-logo');
+//            self.$footerLogoClone = self.$footerLogo.clone();
+
+            if (!$('#mobile-nav .footer-dev-details').length) {
+                self.$mobileNav.append(self.$footerClone);
+//                self.$mobileNav.append(self.$footerLogoClone);
+            }
+            else {
+                //
+            }
         }
 
         self.mobileNavReset = function () {
