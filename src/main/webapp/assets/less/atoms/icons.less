@@ -87,5 +87,26 @@
             content: @fa-var-phone;            
         }
     }
+    &-toggle{
+        font-size: 36px;
+        line-height: 0.5;
+        position: absolute;
+        bottom: @space;
+        right: @space;
+        z-index: 1;
+        color: @white;        
+        .transition(all ease-out 0.15s);
+        .text-center;
+        vertical-align: middle;
+        display: inline-block;
+        .square(25px);
+        transform-origin: 50% 50%;
+
+        &.active{
+            .icon-toggle {
+                transform: rotate(45deg)
+            }
+        }
+    }
 
 }

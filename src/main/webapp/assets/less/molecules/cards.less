@@ -1,24 +1,61 @@
 //
 // Molecules / Cards
 // ----------------------
+
 .card{
+    &-fluid-container{
+        .dev-container-fluid;
+        background: #2d3237;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    &-container{
+        .dev-container;
+        max-width: @container-narrow;
+    }
+    &-row{
+        .make-row(20px);
+        position: relative;
+        @media @mq-only-mobile{
+            .text-center;
+        }
+    }
+}
+.card-base{
     .square(220px);
     cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    float: left;
+    display: inline;
+    @media @mq-only-mobile{
+        float: none;
+        display: inline-block;
+    }
     .text{
         top: 0;
         color: @white;
-        .team-name{
-            .font-primary;
-            .type-scale(2);
-        }
-        .team-pos{
+        .title{
             .font-primary-bold;
             .type-scale(1);
+        }
+        .subtitle{
+            .font-primary;
+            .type-scale(1);
+            top: -10px;
+            position: relative;
         }
     }
     .media{
         .opacity(1);
         .transition(opacity ease-out 0.2s);
+    }
+    .icon-toggle{
+        color: @white;
+        bottom: @space;
+        right: @space;
     }
     &:hover{
         .media{
@@ -44,21 +81,129 @@
             .transition(opacity ease-out 0.2s);
         }
     }
+
+    .card-desc{
+        display: none; 
+    }
 }
-.circle-card{
+.card-circle{
+    &:extend(.card-base all);
     .border-radius(100%);
+    height: auto;
     .media{
         img{
             .border-radius(100%);
+            width: 100%;
+            height: auto;        
         }
     }
     .text{
-        top: 20px;
-        left: 20px;
+        padding: 0;
+        padding-left: 40px;
+        padding-top: 30px;
+        .title{
+            font-size: 13px;
+            letter-spacing: 0.075em;
+            .text-uppercase;
+            position: relative;
+        }
+        .subtitle{
+            margin: 0 0 5px 0;
+            font-size: 14px;
+            letter-spacing: -0.025em;
+        }
     }
     .icon-toggle{
         color: @green-dark-1;
         bottom: 4px;
         right: 4px;
     }
+
+}
+
+.card-info-row{
+    padding-left: @space-three-quarter;
+    padding-right: @space-three-quarter;
+    clear: both;
+    overflow: hidden;
+    display: block;
+    .clearfix();
+    .desc-blurb{
+        color: @white;
+    }
+    .desc-title{
+        &:extend(.article-container .title all);
+        .type-scale(2);
+        color: @white;
+        &:after{
+            width: 50px;
+            top: 1px;
+        }
+        @media @mq-only-mobile{
+            .type-scale(1);
+            line-height: 22px;
+            margin-bottom: @space /2;
+            &:after{
+                top: 0;
+            }
+        }
+        &:after{
+            width: 130px;
+            position: relative;
+            top: 4px;
+        }
+    }
+    p{
+        padding-left: @space-double;
+        @media @mq-only-mobile{
+            .type-scale(1);
+            font-size: 15px;
+            line-height: 25px;
+            padding-left: @space;
+        }
+        .lk-chevron-inverse{
+            color: @white;
+            margin-left: 5px;
+            &:hover{
+                color: @green-light-2;
+            }
+        }
+
+    }
+    .list-bullet{        
+        padding-left: @space-double;
+        li{
+            .font-primary-light;
+            &:before{
+                color: @green-dark-1;
+            }
+        }
+        @media @mq-only-mobile{
+            padding-left: @space;
+            li{
+                font-size: 15px;
+                line-height: 25px;
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.card-list{
+    section{
+        margin-bottom: @space-double;
+        .block-client{
+            &-image-wrapper{
+                max-width: 300px;
+            }
+            &-title{
+                &:extend(.article-container .title all);
+            }
+            &-blurb{
+                margin-left: @space;
+            }
+        }
+    }
+
 }

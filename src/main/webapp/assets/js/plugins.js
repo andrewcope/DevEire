@@ -19,7 +19,7 @@ define(function (require) {
     require('plugins/modules/stretch-bg');
     require('plugins/modules/dynamic-lead');
     require('plugins/modules/team');
-    require('plugins/modules/clients');
+    require('plugins/modules/card-functions');
     require('plugins/modules/gallery-inline');
     require('plugins/modules/work');
     require('plugins/modules/mobile-nav');

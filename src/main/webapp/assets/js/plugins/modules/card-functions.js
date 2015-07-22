@@ -16,8 +16,8 @@ define(function (require) {
 
         self.init = function () {
 
-            self.$cardRow = self.$el.find('.client-row');
-            self.$cardWrapper = self.$el.find('.client-card-outer');
+            self.$cardRow = self.$el.find('.card-row');
+            self.$cardWrapper = self.$el.find('.card-base');
             self.$cardAnchor = self.$cardWrapper.find('.team-anchor');
             self.$activeClass = 'active';
             self.CardActions();
@@ -30,25 +30,18 @@ define(function (require) {
             var t = !1;
 
             var clickTrigger = function ($el) {
+                self.$cardWrapper.removeClass('active');
+
                 $el.on("click", activeCard);
+                console.log('click');
             };
+
+
             var activeCard = function ($el) {
                 $el.preventDefault();
-                var activeCard = $(this);
-                var clickTrigger = activeCard.hasClass("active");
-                var activeCardParent = activeCard.parents(".client-row");
-
-                activeCardParent.find(".client-card-outer").removeClass("active");
-
-                if (activeCard.hasClass("active")) {
-                    activeCard.removeClass("active");
-                }
-                else {
-                    activeCard.addClass("active");
-                }
-
-                descRowInit(activeCardParent, function () {
-                    clickTrigger || cardInit(activeCard);
+                var t = $(this),clickTrigger = t.hasClass("active"), i = t.parents(".card-row");
+                i.find(".card-base").removeClass("active"), clickTrigger ? t.removeClass("active") : t.addClass("active"), descRowInit(i, function () {
+                    clickTrigger || cardInit(t);
                 });
             };
 
@@ -56,13 +49,13 @@ define(function (require) {
             //r
             var cardInit = function ($el) {
                 //n
-                self.$descRow = $('<section class="client-desc-row"></section>');
+                self.$descRow = $('<section class="card-info-row"></section>');
                 //i
-                self.$descClone = $el.find(".client-desc > *").clone();
+                self.$descClone = $el.find(".card-desc > *").clone();
                 self.$descClone.appendTo(self.$descRow);
                 var i;
-                self.$rowParents = $el.parents(".client-row");
-                self.$devCard = self.$rowParents.find(".client-card-outer");
+                self.$rowParents = $el.parents('.card-row');
+                self.$devCard = self.$rowParents.find('.card-base');
                 self.$devCard.each(function ($el) {
                     i || $(this).position().top > 0 && (i = $el);
                 });
@@ -70,14 +63,14 @@ define(function (require) {
                 l > self.$devCard.length && (l = self.$devCard.length),
                         self.$descRow.hide(),
                         self.$devCard.eq(l - 1).after(self.$descRow),
-                        self.$descRow.slideDown("slow"),
-                        self.$descRow.animate({opacity: 1}, "slow"),
-                        window.location.hash = "!" + $el.attr("id");
-                self.$scrollPos = self.$rowParents.find('.client-card-outer.active');
+                        self.$descRow.slideDown('slow'),
+                        self.$descRow.animate({opacity: 1}, 'slow'),
+                        window.location.hash = "!" + $el.attr('id');
+                self.$scrollPos = self.$rowParents.find('.card-base.active');
                 $('html,body').animate({scrollTop: $(self.$scrollPos).offset().top - 65}, 500);
             };
             var descRowInit = function ($el, n) {
-                self.$teamRow = $el.find(".client-desc-row");
+                self.$teamRow = $el.find('.card-info-row');
                 self.$teamRow.length || n(),
                         self.$teamRow.slideUp(t ? 10 : "fast", function () {
                             self.$teamRow.remove(), window.location.hash = "!", n();
@@ -86,13 +79,12 @@ define(function (require) {
             self.$cardRow.each(function () {
                 {
                     var i;
-                    self.$teamCard = $(this).find(".client-card-outer");
-                    self.$cardRow.find(".client-card-outer");
+                    self.$teamCard = $(this).find('.card-base');
+                    self.$cardRow.find('.card-base');
                 }
                 self.$teamCard.each(function (e) {
                     i || $(this).position().top > 0 && (i = e);
-                }),
-                        1 === i && (t = !0), self.$teamCard.each(function () {
+                }), 1 === i && (t = !0), self.$teamCard.each(function () {
                     var e = $(this);
                     clickTrigger(e);
                 });
@@ -125,5 +117,5 @@ define(function (require) {
         },
     }
 
-    return bsp_utils.plugin(false, 'bsp', 'dev-clients', handler);
+    return bsp_utils.plugin(false, 'bsp', 'dev-card-actions', handler);
 });

@@ -6,56 +6,14 @@
 .client{
     margin-top: @gutter-top;  
 }
-.client{
-    &-fluid-container{
-        .dev-container-fluid;
-        background: #2d3237;
-        padding-top: 50px;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-    }
-    &-container{
-        .dev-container;
-        max-width: @container-narrow;
-    }
-    &-row{
-        .make-row(20px);
-        position: relative;
-        @media @mq-only-mobile{
-            .text-center;
-        }
-    } 
-    &-card-outer{
-        /*.make-md-column(3, 20px);*/
-    }
-    &-wrapper{
-        margin: 0 auto;
-    }
-    &-card-outer{
-        &:extend(.team-card all); 
-        /*.make-sm-column(4, 20px);*/
-        .square(220px);
-        float: left;
-        display: inline;
-        margin-left: 10px;
-        margin-right: 10px;
-        transition: 1s ease;
-        @media @mq-only-mobile{
-            float: none;
-            display: inline-block;
-        }
-        @media @mq-only-small-mobile{
-            /*            width: 320px;
-                        display: block;
-                        float: none;
-                        margin: auto;
-                        margin-bottom: 20px;*/
-        }
+.card-client{
+    .card-base{
+        &:extend(.card-base all); 
         border: none;
         height: 200px;
-        background: transparent;
-        .client-card{
-            &:extend(.card all); 
+        background: transparent;       
+
+        .card-inner{
             &:extend(.block all);
             &:extend(.block-text-overlay all);   
             background: @white;
@@ -63,9 +21,7 @@
             height: 200px;
             .opacity(1);
             border: @cardBorder;
-            .client-desc{
-                display: none; 
-            }
+            
             .text{
                 .opacity(1);
                 top: initial;
@@ -75,12 +31,12 @@
                 display: table;
                 padding: 5px;
                 border-top: @cardBorder;
-                .client{
-                    &:extend(.card .text .team-pos all);
+                .title{
+                    &:extend(.card-base .text .title);
                     line-height: 18px;
                     display: table-cell;
                     vertical-align: middle;
-                    text-align: center;
+                    .text-center;
                     color: @green-dark-1;
                 }
             }
@@ -97,7 +53,7 @@
                     .opacity(1);                
                     background-color: @green-dark-1;
                     .transition(background ease-out 0.2s);
-                    .client{
+                    .title{
                         color: @white;
                         .transition(color ease-out 0.2s);
                     }
@@ -110,45 +66,12 @@
                 .opacity(1);                
                 background-color: @green-dark-1;
                 .transition(background ease-out 0.2s);
-                .client{
+                .title{
                     color: @white;
                     .transition(color ease-out 0.2s);
                 }
             }
         }
-
-    }
-
-}
-
-.client-desc-row {
-    &:extend(.team-desc-row all);
-    .desc-title{
-        color: @white;
-        &:after{
-            width: 50px;
-            top: 1px;
-        }
-    }
-    .desc-blurb{
-        color: @white;
     }
 }
 
-.client-list{
-    section{
-        margin-bottom: @space-double;
-        .block-client{
-            &-image-wrapper{
-                max-width: 300px;
-            }
-            &-title{
-                &:extend(.article-container .title all);
-            }
-            &-blurb{
-                margin-left: @space;
-            }
-        }
-    }
-
-}
