@@ -35,15 +35,20 @@ define(function (require) {
             //i
             var activeCard = function ($el) {
                 $el.preventDefault();
-                var t = $(this), clickTrigger = t.hasClass("active"), i = t.parents(".team-row");
-                i.find(".team-card").removeClass("active"), clickTrigger ? t.removeClass("active") : t.addClass("active"), o(i, function () {
+                var activeId = "#" + this.getAttribute('id');
+                
+                var t = $(this);
+                clickTrigger = t.hasClass("active");
+                var i = t.parents(".team-row");
+                i.find(".team-card").removeClass("active");
+                clickTrigger ? t.removeClass("active") : t.addClass("active"), o(i, function () {
                     clickTrigger || cardInit(t);
                 });
-                var activeId = "#" + this.getAttribute('id');
-
                 if (self.$cardWrapper.hasClass('active')) {
                     $('html,body').animate({scrollTop: $(activeId).offset().top - 65}, 500);
                 }
+
+
             };
             //r
             var cardInit = function ($el) {

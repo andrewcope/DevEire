@@ -19,15 +19,6 @@ define(function (require) {
 
             self.selectbox();
 
-            self.$select.on('change', function (e) {
-
-//                    self.$topicStreamRow.empty();
-//                    self.$offset = 0;
-//                    self.BuildRequest();
-//                    self.LoadPosts();
-
-            });
-
         };
 
         self.selectbox = function () {            
@@ -49,7 +40,6 @@ define(function (require) {
             });
             self.$select.on("change", function () {
                 self.$selectedVal = $(this).val();
-
                 self.$filter.each(function () {
                     if ($(this).attr("data-filter") === self.$select.val()) {
                         self.$filter.hide();

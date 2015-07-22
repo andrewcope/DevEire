@@ -141,3 +141,264 @@
         .text-left;
     }
 }
+
+.container-fluid{
+    .container-fluid();
+    .row{
+        .dev-row;
+    }
+}
+
+
+#people {
+    border-top: 1px solid #d7d7d7;
+    position: relative;
+    min-height: 300px;
+    background: #fff url("http://www.hitcents.com/assets/loading.gif") 50% 50% no-repeat
+}
+
+#people ul#toggle {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    z-index: 100;
+    padding: 0
+}
+
+#people ul#toggle li {
+    list-style: none;
+    line-height: 100%
+}
+
+#people ul#toggle a {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: -29px;
+    cursor: pointer;
+    z-index: 10;
+    border: 1px solid #b3b3b3;
+    display: block;
+    background: #fff;
+    color: #b3b3b3;
+    text-align: center;
+    font-size: 15px
+}
+
+#people ul#toggle a i {
+    width: 28px;
+    height: 28px;
+    line-height: 28px
+}
+
+#people ul#toggle img {
+    padding: 10px;
+    padding-bottom: 0
+}
+
+#people ul#filter {
+    display: block;
+    display: none;
+    background: #fff;
+    border: 1px solid #b3b3b3;
+    color: #b3b3b3;
+    padding: 0;
+    margin: 0
+}
+
+#people ul#filter li {
+    list-style: none;
+    cursor: pointer;
+    margin: 6px 0;
+    padding: 10px 40px 10px 15px
+}
+
+#people ul#filter li.active {
+    color: #ec5306
+}
+
+#people #info {
+    display: none;
+    clear: both;
+    padding: 40px 25px;
+    background: url("http://www.hitcents.com/assets/b2b/people/bg_designer.jpg") 50% 50% no-repeat
+}
+
+#people #info p {
+    color: #fff;
+    text-align: center;
+    font-family: 'latolight';
+    display: block
+}
+
+#people #info p.name {
+    font-size: 2.7em;
+    line-height: 120%;
+    margin-bottom: 10px
+}
+
+#people #info p.position {
+    font-size: 2em;
+    margin-bottom: 20px
+}
+
+#people #info p.blurb {
+    font-size: 1.5em;
+    max-width: 800px;
+    margin: 0 auto
+}
+
+#people .person {
+    width: 16.666666666%;
+    margin: 0 !important;
+    padding: 0;
+    background: #fff;
+    border: 1px solid #d7d7d7;
+    border-top: none;
+    border-left: none;
+    cursor: pointer;
+    overflow: hidden
+}
+
+#people .person.inactive img {
+    -webkit-filter: blur(8px);
+    -moz-filter: blur(8px);
+    -o-filter: blur(8px);
+    -ms-filter: blur(8px);
+    filter: blur(8px);
+    /*filter: progid: DXImageTransform.Microsoft.Blur(PixelRadius='3');*/
+    opacity: .45
+}
+
+#people .person .info {
+    display: none
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    #people .person {
+        width: 25% !important;
+        clear: none;
+        float: left
+    }
+}
+
+@media (min-width: 250px) and (max-width: 480px) {
+    #people .person {
+        width: 50%;
+        clear: none;
+        float: left
+    }
+}
+
+@media (min-width: 0px) and (max-width: 249px) {
+    #people .person {
+        width: 100%;
+        clear: none;
+        float: left
+    }
+}
+
+#people .person img {
+    width: 100%;
+    display: block
+}
+.col-sm-2{
+    .make-sm-column(6);
+}
+
+
+
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12 {
+    float: left
+}
+
+
+.col-xs-2 {
+    width: 16.6666666667%
+}
+@media (min-width: 768px) {
+    .col-sm-1,
+    .col-sm-2,
+    .col-sm-3,
+    .col-sm-4,
+    .col-sm-5,
+    .col-sm-6,
+    .col-sm-7,
+    .col-sm-8,
+    .col-sm-9,
+    .col-sm-10,
+    .col-sm-11,
+    .col-sm-12 {
+        float: left
+    }
+    .col-sm-2 {
+        width: 16.6666666667%
+    }
+   
+}

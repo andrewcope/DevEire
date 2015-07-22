@@ -28,7 +28,8 @@ define(function (require) {
         };
 
         self.init = function () {
-
+            $('.dev-carousel-stage').fadeIn();
+            $('.dev-carousel .dl-spinner').remove();
             self.$stage = self.$el.children('[class$="-stage"]');
 
             // init both carousels

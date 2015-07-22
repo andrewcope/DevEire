@@ -3,7 +3,6 @@
 //============================
 
 #global-footer{
-    /*border-top: 1px solid @green-dark-1;*/
     .main-footer,
     .sub-footer{
         &-fluid-container{
@@ -22,7 +21,6 @@
     }   
     .main-footer-inner{
         padding-top: @space;
-        /*padding-bottom: @space;*/
     }
 
     .sub-footer-inner{
@@ -39,7 +37,6 @@
         &-details,
         &-address,
         &-col{
-            /*.make-md-column(6, 20px);*/
             color: @white;
         }
         &-details{
@@ -108,19 +105,6 @@
             margin: auto;
             left: 0;
             right: 0;
-            @media @mq-md{
-                .transition(1s ease);
-            }
-        }
-        @media @mq-md{
-            &:hover{
-                img{
-                    -webkit-transform: scale(1.1);
-                    -ms-transform: scale(1.1);
-                    transform: scale(1.1);
-                    .transition(1s ease);
-                }
-            }
         }
     }
 }

@@ -14,9 +14,8 @@ define(function (require) {
     require('bsp-share');
     require('bsp-carousel-plugin');
     require('bsp-carousel-thumbnav-plugin');
-    require('bsp-share');
-//    require('slick');
-
+    
+    require('plugins/modules/truncate');
     require('plugins/modules/stretch-bg');
     require('plugins/modules/dynamic-lead');
     require('plugins/modules/team');
@@ -24,6 +23,7 @@ define(function (require) {
     require('plugins/modules/gallery-inline');
     require('plugins/modules/work');
     require('plugins/modules/mobile-nav');
+    require('plugins/modules/test');
     
     return this;
 });

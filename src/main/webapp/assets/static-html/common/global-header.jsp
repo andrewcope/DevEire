@@ -10,15 +10,18 @@
                 <button id="mobile-btn" class="icon-hamburger icon-hamburger-mobile">
                     <span>toggle menu</span>
                 </button>
+                <%-- Mobile nav (full screen experience) --%>
                 <div id="mobile-nav">
-                    <ul class="header-nav">                                   
+                    <ul class="header-nav">   
+                        <li><a class="active" href="landing.jsp">Home</a></li> 
                         <li><a href="clients.jsp">Our Clients</a></li> 
                         <li><a href="team.jsp">Our Team</a></li> 
                         <li><a href="work.jsp">Work At DevEire</a></li> 
                     </ul>
                 </div>
                 <div id="global-nav">
-                    <ul class="header-nav">                                   
+                    <ul class="header-nav">  
+                        <li><a class="active" href="landing.jsp">Home</a></li> 
                         <li><a href="clients.jsp">Our Clients</a></li> 
                         <li><a href="team.jsp">Our Team</a></li> 
                         <li><a href="work.jsp">Work At DevEire</a></li> 
