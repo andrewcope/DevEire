@@ -21,7 +21,7 @@ define(function (require) {
             var header = $('#global-header');
             $(window).scroll(function () {
                 header.addClass('header-scroll');
-                if ($(this).scrollTop() === 0) {
+                if ($(this).scrollTop() < 100) {
                     header.removeClass('header-scroll');
                 }
             });

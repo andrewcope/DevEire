@@ -1,7 +1,10 @@
 <%@include file="/WEB-INF/common/taglibs.jsp" %>
 
-<footer class="main-footer" id="global-footer">
+<footer class="main-footer" id="global-footer" data-bsp-back-to-top>
     <div class="main-footer-fluid-container">
+        <div class="dev-back-top">
+            <a href="#" class="icon icon-arrow-up" id="back-to-top"></a>
+        </div>
         <section class="main-footer-container">
             <div class="main-footer-row">
                 <div class="main-footer-inner">
@@ -15,7 +18,7 @@
                             <li>Limerick, Ireland</li>
                         </ul>
                     </div>
-                    
+
                     <div class="footer-dev-details">
                         <li class="footer-header">Get in touch</li>
                         <li>                            

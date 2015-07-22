@@ -24,6 +24,7 @@ define(function (require) {
     require('plugins/modules/work');
     require('plugins/modules/mobile-nav');
     require('plugins/modules/header-scroll');
+    require('plugins/modules/back-to-top');
     require('plugins/modules/test');
     
     return this;
