@@ -1,6 +1,6 @@
 <%@include file="/WEB-INF/common/taglibs.jsp" %>
 
-<header class="main-header" id="global-header" data-bsp-mobile-text data-bsp-mobile-nav>
+<header class="main-header" id="global-header" data-bsp-mobile-text data-bsp-header-scroll data-bsp-mobile-nav>
     <div class="main-header-container">
         <section class="main-header-content">
             <div class="main-header-inner">

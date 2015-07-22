@@ -2,6 +2,8 @@
 // header
 //============================
 
+@staticScrollHeight: @headHeightStatic - 20;
+
 #global-header{
     .dev-container-fluid;
     background: @white;
@@ -9,9 +11,33 @@
     position: fixed;
     width: 100%;
     top: 0;
-    height: @headHeight;
+    height: @headHeightStatic;
     z-index: 999;
     .transition(all ease-out @transition-medium);
+    transition: all @transition-short linear;
+    &.header-scroll{
+        position: fixed;
+        height: @staticScrollHeight;
+        .main-header-logo{        
+            height: @staticScrollHeight;
+        }
+        .header-nav{        
+            li{   
+                a{
+                    line-height: @staticScrollHeight;
+                    .transition(all @transition-short);
+                    &.active{
+                        &:before{
+                            bottom: 15px;
+                        }
+                    }
+                    &:before{
+                        bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
     .main-header-container{
         .dev-container;
         width: 100% !important;
@@ -32,10 +58,15 @@
         position: relative;
         .pull-left;
         padding: @space-half 0;
+        height: @headHeightStatic;
+        padding: 0;
+        transition: all @transition-short linear;
         .logo{
             max-width: 180px;
             height: auto;
             display: block;
+            .abs-center;
+            transition: all @transition-short linear;
         }
     }
 
@@ -59,28 +90,22 @@
                 position: relative;
                 &.active{
                     &:before{
-                        /*                        content: "";
-                                                position: absolute;
-                                                width: 100%;
-                                                height: 2px;
-                                                bottom: @space-three-quarter;
-                                                left: 0;
-                                                background-color: @green-light-2;  
-                                                visibility: visible;
-                                                -webkit-transform: scaleX(1);
-                                                transform: scaleX(1);*/
-                        background-color: @green-light-2;  
+                        background-color: @green-light-2; 
+                        bottom: @space-and-half;
                     }
                 }
-                &:before {
-                    background-color: @green-light-2;     
+                &:before{
+                    bottom: @space-and-half;
                 }
                 &:hover{
-
+                    &:before{
+                        background-color: @green-light-2;     
+                    }
                 }
             }
         }
     }
+
 }
 
 @media @mq-only-mobile {
@@ -124,7 +149,7 @@
                     right: 5px;
                     height: 4px;
                     background: @green-dark-1;
-                    .transition(background @transition-long);
+                    .transition(background @transition-short);
                     &:after, &:before {
                         position: absolute;
                         display: block;
@@ -144,10 +169,10 @@
                 &.icon-hamburger-mobile {
                     background-color: @white;
                     span {
-                        .transition(background 0s @transition-long);
+                        .transition(background 0s @transition-short);
                         &:before,&:after {
-                            transition-duration: @transition-long, @transition-long;
-                            transition-delay: @transition-long, 0s;
+                            transition-duration: @transition-short, @transition-short;
+                            transition-delay: @transition-short, 0s;
                         }
                         &:before {
                             transition-property: top, transform;
@@ -168,7 +193,7 @@
                                 transform: rotate(-45deg);
                             }
                             &:before, &:after{
-                                transition-delay: 0s, @transition-long;
+                                transition-delay: 0s, @transition-short;
                                 background-color: darken(@green-dark-1,10%);
                             }
                         }

@@ -1,12 +1,12 @@
 
-// our-work
+// client
 //============================
 
 @cardBorder: 1px solid @green-dark-1;
-.our-work{
+.client{
     margin-top: @gutter-top;  
 }
-.our-work{
+.client{
     &-fluid-container{
         .dev-container-fluid;
         background: #2d3237;
@@ -54,7 +54,7 @@
         border: none;
         height: 200px;
         background: transparent;
-        .our-work-card{
+        .client-card{
             &:extend(.card all); 
             &:extend(.block all);
             &:extend(.block-text-overlay all);   
@@ -63,7 +63,7 @@
             height: 200px;
             .opacity(1);
             border: @cardBorder;
-            .our-work-desc{
+            .client-desc{
                 display: none; 
             }
             .text{
@@ -121,7 +121,7 @@
 
 }
 
-.our-work-desc-row {
+.client-desc-row {
     &:extend(.team-desc-row all);
     .desc-title{
         color: @white;
@@ -135,7 +135,7 @@
     }
 }
 
-.our-work-list{
+.client-list{
     section{
         margin-bottom: @space-double;
         .block-client{

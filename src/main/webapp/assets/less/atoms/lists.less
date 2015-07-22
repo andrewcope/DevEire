@@ -5,250 +5,266 @@
 // Unordered and Ordered lists
 ul,
 ol {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: @space-and-half;
-  ul,
-  ol {
-    margin-bottom: 0;
-  }
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: @space-and-half;
+    ul,
+    ol {
+        margin-bottom: 0;
+    }
 }
 
 .list-large {
-  .type-scale(1, "tight");
-  font-weight: @font-weight-xl;
+    .type-scale(1, "tight");
+    font-weight: @font-weight-xl;
 }
 
 .list-small {
-  .type-scale(-1, "tight");
+    .type-scale(-1, "tight");
 }
 
 .list-col2 {
-  .clearfix();
-  li{
-    float: left;
-    width: percentage(1/2);
-/*    @media @screen-xsmall {
-      float: none;
-      width: 100%;
-    }*/
-  }
+    .clearfix();
+    li{
+        float: left;
+        width: percentage(1/2);
+        /*    @media @screen-xsmall {
+              float: none;
+              width: 100%;
+            }*/
+    }
 }
 .list-col3 {
-  .clearfix();
-  li {
-    float: left;
-    width: percentage(1/3);
-/*    @media @screen-xsmall {
-      float: none;
-      width: 100%;
-    }*/
-  }
+    .clearfix();
+    li {
+        float: left;
+        width: percentage(1/3);
+        /*    @media @screen-xsmall {
+              float: none;
+              width: 100%;
+            }*/
+    }
 }
 .list-col4 {
-  .clearfix();
-  li {
-    float: left;
-    width: percentage(1/4);
-/*    @media @screen-xsmall {
-      float: none;
-      width: 100%;
-    }*/
-  }
+    .clearfix();
+    li {
+        float: left;
+        width: percentage(1/4);
+        /*    @media @screen-xsmall {
+              float: none;
+              width: 100%;
+            }*/
+    }
 }
 .list-col5 {
-  .clearfix();
-  li {
-    float: left;
-    width: percentage(1/5);
-/*    @media @screen-xsmall {
-      float: none;
-      width: 100%;
-    }*/
-  }
+    .clearfix();
+    li {
+        float: left;
+        width: percentage(1/5);
+        /*    @media @screen-xsmall {
+              float: none;
+              width: 100%;
+            }*/
+    }
 }
 
 // ordered list
 .list-ordered:extend(.list-bullet all) {
-  counter-reset: ol-counter;
+    counter-reset: ol-counter;
 
-  > li:before {
-    content: counter(ol-counter)".";
-    counter-increment: ol-counter;
-  }
+    > li:before {
+        content: counter(ol-counter)".";
+        counter-increment: ol-counter;
+    }
 }
 
 .list(@bulletColor:@gray-light-3;) {
-  li {
-    padding-left: @space;
-    position: relative;
-    margin-bottom: @space-quarter;
-  }
+    li {
+        padding-left: @space;
+        position: relative;
+        margin-bottom: @space-quarter;
+    }
 
-  & li:before {
-    content: '\2022'; // bullet
-    color: @bulletColor;
-    position: absolute;
-    left: 0;
-  }
+    & li:before {
+        content: '\2022'; // bullet
+        color: @bulletColor;
+        position: absolute;
+        left: 0;
+    }
 }
 
 .list {
-  .list();
+    .list();
 
-  .list-bullet & {
-      margin-bottom: @space-half;
-  }
+    .list-bullet & {
+        margin-bottom: @space-half;
+    }
 }
 
 .list-bullet {
     &:extend(.list all);
-  margin-bottom: @space-and-half;
-  display: inline-block;
+    margin-bottom: @space-and-half;
+    display: inline-block;
 }
 // Inline turns list items into inline-block
 .list-inline {
-  margin-left: -5px;
+    margin-left: -5px;
 
-  ul {
-    .clearfix();
-  }
+    ul {
+        .clearfix();
+    }
 
-  > li {
-    display: inline-block;
-    padding-left: (@space-quarter /2);
-    padding-right: (@space-quarter /2);
-  }
-  .caption{
-    .type-scale(-2);
-  }
+    > li {
+        display: inline-block;
+        padding-left: (@space-quarter /2);
+        padding-right: (@space-quarter /2);
+    }
+    .caption{
+        .type-scale(-2);
+    }
 }
 
 // if you do not want to have predefined columns, but instead would rather just add spacing between items and let the items
 // decide how much space they should take up, use these instead
 .list-inline-space {
-  margin: 0 -(@space);
+    margin: 0 -(@space);
 
-  ul > li {
-    float: left;
-    margin: 0 @space;
-  }
+    ul > li {
+        float: left;
+        margin: 0 @space;
+    }
 }
 .list-inline-space-half {
-  margin: 0 -(@space-half);
+    margin: 0 -(@space-half);
 
-  ul > li {
-    float:left;
-    margin: 0 @space-half;
-  }
+    ul > li {
+        float:left;
+        margin: 0 @space-half;
+    }
 }
 .list-inline-space-double {
-  margin: 0 -(@space-double);
+    margin: 0 -(@space-double);
 
-  ul > li {
-    float: left;
-    margin: 0 @space-double;
-  }
+    ul > li {
+        float: left;
+        margin: 0 @space-double;
+    }
 }
 
 // Maps to the spacing scale in 'variables.less'
 .list-pad-space-quarter {
-  margin-right: -@space-quarter;
+    margin-right: -@space-quarter;
 
-  li {
-    padding-right: @space-quarter;
-    padding-bottom: @space-quarter;
-  }
+    li {
+        padding-right: @space-quarter;
+        padding-bottom: @space-quarter;
+    }
 }
 .list-pad-space-half {
-  margin-right: -@space-half;
+    margin-right: -@space-half;
 
-  li {
-    padding-right: @space-half;
-    padding-bottom: @space-half;
-  }
+    li {
+        padding-right: @space-half;
+        padding-bottom: @space-half;
+    }
 }
 .list-pad-space-three-quarter {
-  margin-right: -@space-three-quarter;
+    margin-right: -@space-three-quarter;
 
-  li {
-    padding-right: @space-three-quarter;
-    padding-bottom: @space-three-quarter;
-  }
+    li {
+        padding-right: @space-three-quarter;
+        padding-bottom: @space-three-quarter;
+    }
 }
 .list-pad-space {
 
-  li {
-    padding-right: @space;
-    padding-bottom: @space;
-  }
+    li {
+        padding-right: @space;
+        padding-bottom: @space;
+    }
 }
 .list-pad-space-and-quarter {
-  margin-right: -@space-and-quarter;
+    margin-right: -@space-and-quarter;
 
-  li {
-    padding-right: @space-and-quarter;
-    padding-bottom: @space-and-quarter;
-  }
+    li {
+        padding-right: @space-and-quarter;
+        padding-bottom: @space-and-quarter;
+    }
 }
 .list-pad-space-and-half {
-  margin-right: -@space-and-half;
+    margin-right: -@space-and-half;
 
-  li {
-    padding-right: @space-and-half;
-    padding-bottom: @space-and-half;
-  }
+    li {
+        padding-right: @space-and-half;
+        padding-bottom: @space-and-half;
+    }
 }
 .list-pad-space-double {
-  margin-right: -@space-double;
+    margin-right: -@space-double;
 
-  li {
-    padding-right: @space-double;
-    padding-bottom: @space-double;
-  }
+    li {
+        padding-right: @space-double;
+        padding-bottom: @space-double;
+    }
 }
 
 // Right padding. Maps to spacing scale in 'variables.less'
 .list-pad-right-space-half {
-  margin-right: -@space-half;
+    margin-right: -@space-half;
 
-  li {
-    padding-right: @space-half;
-  }
+    li {
+        padding-right: @space-half;
+    }
 }
 .list-pad-right-space {
 
-  li {
-    padding-right: @space;
-  }
+    li {
+        padding-right: @space;
+    }
 }
 .list-pad-right-space-double {
-  margin-right: -@space-double;
+    margin-right: -@space-double;
 
-  li {
-    padding-right: @space-double;
-  }
+    li {
+        padding-right: @space-double;
+    }
 }
 
 // Bottom padding. Maps to spacing scale in 'variables.less'
 .list-pad-btm-space-half {
-  li {
-    padding-bottom: @space-half;
-  }
+    li {
+        padding-bottom: @space-half;
+    }
 }
 .list-pad-btm-space-three-quarter {
-  li {
-    padding-bottom: @space-three-quarter;
-  }
+    li {
+        padding-bottom: @space-three-quarter;
+    }
 }
 .list-pad-btm-space {
-  li {
-    padding-bottom: @space;
-  }
+    li {
+        padding-bottom: @space;
+    }
 }
 .list-pad-btm-space-double {
-  li {
-    padding-bottom: @space-double;
-  }
+    li {
+        padding-bottom: @space-double;
+    }
+}
+
+// hr
+
+hr {
+    clear: both;
+    border-bottom: 0;
+    border-top: 1px dotted #ccc;
+    border-right: 0;
+    border-left: 0;
+    margin: 30px 0;
+    min-height: 0;
+    height: 1px;
+    &.alt2 {
+        border-style: dashed;
+    }
 }

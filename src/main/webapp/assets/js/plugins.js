@@ -23,6 +23,7 @@ define(function (require) {
     require('plugins/modules/gallery-inline');
     require('plugins/modules/work');
     require('plugins/modules/mobile-nav');
+    require('plugins/modules/header-scroll');
     require('plugins/modules/test');
     
     return this;
