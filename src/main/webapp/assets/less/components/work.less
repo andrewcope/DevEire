@@ -2,32 +2,97 @@
 // dev-work
 //============================
 
-.our-position-wrapper{
-    .dev-hero{
-        &.generic-hero{
-            .dev-hero-bg{
-                display: none;
+.work{
+    &-fluid-container{
+        .dev-container-fluid;
+        background: #2d3237;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        margin-bottom: 20px;
+        &.filter-results{
+            padding: 0;
+        }
+        &.work-info{
+            margin: 0;
+            .text-center;
+        }
+    }
+    &-container{
+        .dev-container;
+        max-width: @container-narrow;
+    }
+    &-page{
+        .dev-hero{
+            margin: 0;
+        }
+    }
+    &-row{
+        .make-row(20px);
+        position: relative;
+        @media @mq-only-mobile{
+            .text-center;
+        }
+    }
+    &-inner{
+        .title, 
+        .blurb{
+            .text-center;
+        }
+        .col-full{
+            .make-sm-column(12);
+            &.work-dd-filter{
+                .text-center;
+                margin-top: @space-double;
+            }
+            .title{
+                &:extend(.article-container .title all);
+                display: inline-block;
+                &:after{
+                    margin: auto;
+                    width: 70%;
+                }
+            }
+            &.work-intro{
+                .text-center;
             }
         }
     }
-    .our-position{
-        &-container{
-            .dev-container-fluid;
-            background: #2d3237;
-            margin-top: -@space-double;
-            min-height: 300px;
-        } 
-        &-inner{
-            .dev-container;
-            max-width: @container-narrow;
-            margin: auto;
+
+}
+
+.work-wrapper{
+    .dev-hero{
+        &.generic-hero{
+            .dev-hero-bg{
+                /*display: none;*/
+            }
         }
-        &-row{
-            .dev-row;
-        }
-        &-col{
-            p,h1{
-                color: @white;
+    }
+
+}
+.list-work-filter{
+    .list-work{
+        /*&:extend(.list-pad-btm-space all);*/
+        .list-item{
+            a{
+                display: block;
+            }
+            .pos-type{
+                display: inline-block;
+                padding-top: @space;
+                .text-uppercase;
+                font-size: 18px;
+                &:after{
+                    content: '';
+                    background: @green-dark-1;
+                    display: block;
+                    height: 2px;
+                    float: none;
+                    width: 100%;
+                    margin-bottom: @space-half;
+                    top: 3px;
+                    position: relative;
+                }
             }
         }
     }

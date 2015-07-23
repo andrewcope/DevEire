@@ -8,6 +8,7 @@
         background: #24282c;
         color: @white;
         border: 1px solid #606467;
+        width: 270px !important;
         .border-radius(0px);
         .selectboxit-arrow-container{
             .selectboxit-arrow{
@@ -15,7 +16,7 @@
                 top: 0px;
                 right: 0;  
                 left: -10px;
-                line-height: 30px;
+                line-height: 40px;
                 &:before{  
                     .fa;          
                     content: @fa-var-chevron-down;            
@@ -43,8 +44,18 @@
             }
         }
     }
-    &:hover{
-
+    .selectboxit-container{
+        span, .selectboxit-options a{
+            height: 40px;
+            line-height: 40px;
+        }
+        .selectboxit-options{
+            width: 100%;
+        }
+    }
+    span.selectboxit-text{
+        font-size: 20px;
+        max-width: 90% !important;
     }
     .selectboxit-list{
         background: #24282c;

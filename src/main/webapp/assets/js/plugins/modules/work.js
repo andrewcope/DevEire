@@ -21,10 +21,13 @@ define(function (require) {
 
         };
 
-        self.selectbox = function () {            
-            self.$filter = $('.our-position-dd-filter').find(".list-item");
+        self.selectbox = function () {
+            self.$filter = $('.filter-results').find(".list-item");
+            self.$workInfo = $('.work-wrapper').find(".work-info");
+            self.$filterWrapper = $('.work-fluid-container.filter-results');
             self.$filter.hide();
-            
+            self.$workInfo.hide();
+
             self.$select.selectBoxIt({
                 showEffect: "slideDown",
 //                hideEffect: "slideUp",
@@ -39,13 +42,21 @@ define(function (require) {
                 }
             });
             self.$select.on("change", function () {
+                self.$scrollPos = $('.work-wrapper').find(self.$select);
+                
+                if (self.$filterWrapper.length) {
+                    var scrollPos = self.$filterWrapper.offset().top;
+                }
+                console.log(scrollPos);
+                $('html,body').animate({scrollTop: scrollPos - 65}, 500);
+                self.$workInfo.fadeIn();
                 self.$selectedVal = $(this).val();
                 self.$filter.each(function () {
-                    if ($(this).attr("data-filter") === self.$select.val()) {
+                    if ($(this).attr("data-pos") === self.$select.val()) {
                         self.$filter.hide();
                         $(this).fadeIn();
                     }
-                    if(self.$select.val() === 'all'){
+                    if (self.$select.val() === 'all') {
                         self.$filter.fadeIn();
                     }
                 });
