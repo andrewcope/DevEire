@@ -130,6 +130,8 @@
     .desc-title{
         .font-primary-bold;
         .type-scale(2);
+        font-size: 21px;
+        line-height: 24px;
         margin-bottom: @space;
         color: @white; 
         span{
@@ -140,7 +142,6 @@
                 display: block;
                 height: 2px;
                 float: none;
-                width: 70%;
                 margin: 0 auto;
                 top: 6px;
                 position: relative;
@@ -160,8 +161,11 @@
     }
     .list-bullet{        
         padding-left: @space-double;
+        display: block;
         li{
+            font-size: 18px;
             .font-primary-light;
+            line-height: 30px;
             &:before{
                 color: @green-dark-1;
             }
@@ -174,6 +178,58 @@
                 display: block;
                 width: 100%;
             }
+        }
+    }
+    .list-social{
+        &:extend(.list-inline all);
+        margin-left: 0;
+        margin: 0 auto;
+        margin-bottom: @space;
+        .text-center;
+        a{
+            .square(32px);
+            background-color: @green-dark-1;
+            display: block;
+            .text-center;
+            vertical-align: middle;
+            .border-radius(100%);
+            &:before{
+                color: @white;
+            }
+        }
+        .social-icon{
+            .square(40px);
+            line-height: 40px;
+            padding: 0;
+            .border-radius(50%);
+            display: inline-block;
+            zoom: 1;
+            font-size: 0;
+            text-align: center;
+            cursor: pointer;
+            .icon{
+                display: inline-block;
+                zoom: 1;
+                color:@white;
+                font-size: 0;
+                vertical-align: middle;
+                &:before{
+                    font-size: 18px;
+                    line-height: 1;
+                    max-height: none;
+                    vertical-align: middle;
+                }
+            }      
+        }
+        .lbl-title{
+            color: @green-dark-1;
+            font-size: 14px;
+            line-height: 22px;
+            max-height: none;
+            line-height: 40px;
+            .font-primary-bold;
+            .text-uppercase;
+            padding-right: 5.6px;
         }
     }
     .list-inline{
@@ -215,9 +271,18 @@
                 top: 0;
             }
             span{
-                /*                &:after{
-                                    display: none;
-                                }*/
+                display: inline-block;
+                &:after{
+                    content: '';
+                    background: @green-dark-1;
+                    display: block;
+                    height: 2px;
+                    float: none;
+                    width: 70%;
+                    margin: 0 auto;
+                    top: 6px;
+                    position: relative;
+                }
             }
         }
         .desc-blurb{

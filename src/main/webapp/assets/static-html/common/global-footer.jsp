@@ -20,16 +20,18 @@
                     </div>
 
                     <div class="footer-dev-details">
-                        <li class="footer-header">Get in touch</li>
-                        <li>                            
-                            <span>Call Us:</span><a class="#" href="tel:+353061633777">+353 (0)61 633 777</a>                            
-                        </li>
-                        <li>   
-                            <span>Email Us:</span><a href="mailto:email@deveire.com?subject=Hello!">email@deveire.com</a>                         
-                        </li>
-                        <li>   
-                            <span>Linkedin:</span><a href="https://www.linkedin.com/company/deveire">linkedin/deveire</a>                           
-                        </li>
+                        <div class="footer-wrapper">
+                            <li class="footer-header">Get in touch</li>
+                            <li>                            
+                                <span>Call Us:</span><a class="#" href="tel:+353061633777">+353 (0)61 633 777</a>                            
+                            </li>
+                            <li>   
+                                <span>Email Us:</span><a href="mailto:email@deveire.com?subject=Hello!">email@deveire.com</a>                         
+                            </li>
+                            <li>   
+                                <span>Linkedin:</span><a href="https://www.linkedin.com/company/deveire">linkedin/deveire</a>                           
+                            </li>
+                        </div>
                     </div>
                 </div>
             </div>

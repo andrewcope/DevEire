@@ -44,18 +44,18 @@
                             </div>
                             <%-- all these fields are optional, just here as a placeholder--%>
                             <div class="card-desc">
-                                <h4 class="desc-title"><span>Darraghs' role at DevEire</span></h4>
+                                <h4 class="desc-title"><span>Darraghs' role at DevEire</span></h4>                 
                                 <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare. Sed vehicula ligula vel velit sollicitudin, ac ornare nunc placerat. Etiam a suscipit odio, id feugiat dolor. Donec enim tellus, molestie at fermentum at, convallis rhoncus nibh.</p>
+                                <ul class="list-social">
+                                    <li><a href="mailto:devname@deveire.com?subject=Hello!" class="social-icon"><i class="icon icon-mail"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="icon icon-linkedin"></i></a></li>
+                                </ul> 
                                 <h4 class="desc-title"><span>Darraghs' Projects</span></h4>
                                 <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare.                   
                                 </p>
                                 <ul class="list-bullet list-col4">
                                     <li><a href="/assets/static-html/clients.jsp#!drivechipputt">Drive, Chip &amp Putt</a></li>
                                     <li><a href="/assets/static-html/clients.jsp#!walmart">Walmart</a></li>
-                                </ul>
-                                <ul class="list-inline">
-                                    <li class=""><a class="icon icon-mail" href='#'></a></li>
-                                    <li class=""><a class="icon icon-linkedin" href='#'></a></li>
                                 </ul>
                             </div>                  
                             <span class="icon-toggle ">+</span>
@@ -74,6 +74,10 @@
                             <div class="card-desc">
                                 <h4 class="desc-title"><span>Richards' role at DevEire</span></h4>
                                 <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare. Sed vehicula ligula vel velit sollicitudin, ac ornare nunc placerat. Etiam a suscipit odio, id feugiat dolor. Donec enim tellus, molestie at fermentum at, convallis rhoncus nibh.</p>
+                                <ul class="list-social">
+                                    <li><a href="mailto:devname@deveire.com?subject=Hello!" class="social-icon"><i class="icon icon-mail"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="icon icon-linkedin"></i></a></li>
+                                </ul>
                                 <h4 class="desc-title"><span>Richards' Projects</span></h4>
                                 <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare.                   
                                 </p>
@@ -98,6 +102,10 @@
                             <div class="card-desc">
                                 <h4 class="desc-title"><span>Alans' role at DevEire</span></h4>
                                 <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare. Sed vehicula ligula vel velit sollicitudin, ac ornare nunc placerat. Etiam a suscipit odio, id feugiat dolor. Donec enim tellus, molestie at fermentum at, convallis rhoncus nibh.</p>
+                                <ul class="list-social">
+                                    <li><a href="mailto:devname@deveire.com?subject=Hello!" class="social-icon"><i class="icon icon-mail"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="icon icon-linkedin"></i></a></li>
+                                </ul>
                                 <h4 class="desc-title"><span>Alans' Projects</span></h4>
                                 <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare.                   
                                 </p>
@@ -122,6 +130,10 @@
                             <div class="card-desc">
                                 <h4 class="desc-title"><span>Ramons' role at DevEire</span></h4>
                                 <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare. Sed vehicula ligula vel velit sollicitudin, ac ornare nunc placerat. Etiam a suscipit odio, id feugiat dolor. Donec enim tellus, molestie at fermentum at, convallis rhoncus nibh.</p>
+                                <ul class="list-social">
+                                    <li><a href="mailto:devname@deveire.com?subject=Hello!" class="social-icon"><i class="icon icon-mail"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="icon icon-linkedin"></i></a></li>
+                                </ul>
                                 <h4 class="desc-title"><span>Ramons' Projects</span></h4>
                                 <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare.                   
                                 </p>
@@ -146,6 +158,10 @@
                             <div class="card-desc">
                                 <h4 class="desc-title"><span>Martins' role at DevEire</span></h4>
                                 <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare. Sed vehicula ligula vel velit sollicitudin, ac ornare nunc placerat. Etiam a suscipit odio, id feugiat dolor. Donec enim tellus, molestie at fermentum at, convallis rhoncus nibh.</p>
+                                <ul class="list-social">
+                                    <li><a href="mailto:devname@deveire.com?subject=Hello!" class="social-icon"><i class="icon icon-mail"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="icon icon-linkedin"></i></a></li>
+                                </ul>
                                 <h4 class="desc-title"><span>Martins' Projects</span></h4>
                                 <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare.                   
                                 </p>
@@ -170,6 +186,10 @@
                             <div class="card-desc">
                                 <h4 class="desc-title"><span>Lees' role at DevEire</span></h4>
                                 <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare. Sed vehicula ligula vel velit sollicitudin, ac ornare nunc placerat. Etiam a suscipit odio, id feugiat dolor. Donec enim tellus, molestie at fermentum at, convallis rhoncus nibh.</p>
+                                <ul class="list-social">
+                                    <li><a href="mailto:devname@deveire.com?subject=Hello!" class="social-icon"><i class="icon icon-mail"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="icon icon-linkedin"></i></a></li>
+                                </ul>
                                 <h4 class="desc-title"><span>Lees' Projects</span></h4>
                                 <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare.                   
                                 </p>
