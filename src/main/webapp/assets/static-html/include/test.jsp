@@ -1,8 +1,4 @@
-<%@include file="/WEB-INF/common/taglibs.jsp"%>
-<%-- Global start --%>
-<jsp:include page="/WEB-INF/common/startPage.jsp" />
-<%-- Global header --%>
-<jsp:include page="/assets/static-html/common/global-header.jsp" />
+
 <div class="team-fluid-container" id="team" data-bsp-dev-test>
     <div class="team-fluid-row">
         <ul id="dd-toggle" style="display: block;">
@@ -209,7 +205,3 @@
         </div>
     </div>
 </div>
-<%-- Global footer --%>
-<jsp:include page="/assets/static-html/common/global-footer.jsp" />
-<%-- Global end --%>
-<jsp:include page="/WEB-INF/common/endPage.jsp" />
