@@ -114,5 +114,85 @@
             }
         }
     }
+}
+
+.icon-hamburger{
+    top: 7px;
+    .pull-right;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    .square(40px);
+    font-size: 0;
+    text-indent: -9999px;
+    appearance: none;
+    box-shadow: none;
+    .border-radius(none);
+    border: none;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+    span {
+        display: block;
+        position: absolute;
+        top: 18px;
+        left: 5px;
+        right: 5px;
+        height: 4px;
+        background: @green-dark-1;
+        .transition(background @transition-short);
+        &:after, &:before {
+            position: absolute;
+            display: block;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: @green-dark-1;
+            content: "";
+        }
+        &:before {
+            top: -10px;
+        }
+        &:after {
+            bottom: -10px;
+        }
+    }
+    &.icon-hamburger-mobile {
+        background-color: @white;
+        span {
+            .transition(background 0s @transition-short);
+            &:before,&:after {
+                transition-duration: @transition-short, @transition-short;
+                transition-delay: @transition-short, 0s;
+            }
+            &:before {
+                transition-property: top, transform;
+            }
+            &:after {
+                transition-property: bottom, transform;
+            }
+        }
+        &.active {
+            span {
+                background: none;
+                &:before {
+                    top: 0;
+                    transform: rotate(45deg);
+                }
+                &:after {
+                    bottom: 0;
+                    transform: rotate(-45deg);
+                }
+                &:before, &:after{
+                    transition-delay: 0s, @transition-short;
+                    background-color: darken(@green-dark-1,10%);
+                }
+            }
+        }
+    }
 
 }

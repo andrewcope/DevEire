@@ -20,140 +20,174 @@
             </div>
         </div>
         <%-- end article layout --%>
-        <hr class="alt2">
-        <%-- team card container --%>
-        <div class="card-container" data-bsp-dev-card-actions>
 
-            <%-- team card row --%>
-            <div class="card-row">
+        <%-- team card fluid container, edge to edge bg color, color should be published in CMS --%>
+        <div class="card-fluid-container" style="background: #f9f9f9">
+            <%-- team card container --%>
+            <div class="card-container" data-bsp-dev-card-actions>
 
-                <%-- team card wrapper + card-type  - # on card base is important, needed for anchor attr in URL--%>
-                <%-- if round cards, add 'card-round' to following div, else, remove--%>
-                <div class="card-wrapper card-team card-round">
+                <%-- team card row --%>
+                <div class="card-row">
 
-                    <%-- team card--%>
-                    <div class="card-base" id="darragh" data-pos="frontend">
-                        <div class="media">
-                            <img src="http://lorempixel.com/220/220/people/1/">
+                    <%-- team card wrapper + card-type  - # on card base is important, needed for anchor attr in URL--%>
+                    <%-- if round cards, add 'card-round' to following div, else, remove--%>
+                    <div class="card-wrapper card-team card-round">
+
+                        <%-- team card--%>
+                        <div class="card-base" id="darragh" data-pos="frontend">
+                            <div class="media">
+                                <img src="http://lorempixel.com/220/220/people/1/">
+                            </div>
+                            <div class="text">
+                                <h4 class="title">Darragh</h4>
+                                <h5 class="subtitle">Front End</h5>
+                            </div>
+                            <%-- all these fields are optional, just here as a placeholder--%>
+                            <div class="card-desc">
+                                <h4 class="desc-title"><span>Darraghs' role at DevEire</span></h4>
+                                <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare. Sed vehicula ligula vel velit sollicitudin, ac ornare nunc placerat. Etiam a suscipit odio, id feugiat dolor. Donec enim tellus, molestie at fermentum at, convallis rhoncus nibh.</p>
+                                <h4 class="desc-title"><span>Darraghs' Projects</span></h4>
+                                <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare.                   
+                                </p>
+                                <ul class="list-bullet list-col4">
+                                    <li><a href="/assets/static-html/clients.jsp#!drivechipputt">Drive, Chip &amp Putt</a></li>
+                                    <li><a href="/assets/static-html/clients.jsp#!walmart">Walmart</a></li>
+                                </ul>
+                                <ul class="list-inline">
+                                    <li class=""><a class="icon icon-mail" href='#'></a></li>
+                                    <li class=""><a class="icon icon-linkedin" href='#'></a></li>
+                                </ul>
+                            </div>                  
+                            <span class="icon-toggle ">+</span>
                         </div>
-                        <div class="text">
-                            <h4 class="title">Darragh</h4>
-                            <h5 class="subtitle">Front End</h5>
+
+                        <%-- team card--%>
+                        <div class="card-base" id="richard" data-pos="frontend">
+                            <div class="media">
+                                <img src="http://lorempixel.com/220/220/people/2/">
+                            </div>
+                            <div class="text">
+                                <h4 class="title">Richard</h4>
+                                <h5 class="subtitle">Front End</h5>
+                            </div>
+                            <%-- all these fields are optional, just here as a placeholder--%>
+                            <div class="card-desc">
+                                <h4 class="desc-title"><span>Richards' role at DevEire</span></h4>
+                                <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare. Sed vehicula ligula vel velit sollicitudin, ac ornare nunc placerat. Etiam a suscipit odio, id feugiat dolor. Donec enim tellus, molestie at fermentum at, convallis rhoncus nibh.</p>
+                                <h4 class="desc-title"><span>Richards' Projects</span></h4>
+                                <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare.                   
+                                </p>
+                                <ul class="list-bullet list-col4">
+                                    <li><a href="/assets/static-html/clients.jsp#!drivechipputt">Drive, Chip &amp Putt</a></li>
+                                    <li><a href="/assets/static-html/clients.jsp#!walmart">Walmart</a></li>
+                                </ul>
+                            </div>                  
+                            <span class="icon-toggle ">+</span>
                         </div>
-                        <div class="card-desc">
-                            <h4 class="desc-title">Darraghs' role at DevEire</h4>
-                            <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare. Sed vehicula ligula vel velit sollicitudin, ac ornare nunc placerat. Etiam a suscipit odio, id feugiat dolor. Donec enim tellus, molestie at fermentum at, convallis rhoncus nibh.</p>
-                            <h4 class="desc-title">DevNames Projects</h4>
-                            <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare.                   
-                            </p>
-                            <ul class="list-bullet list-col4">
-                                <li><a href="/assets/static-html/clients.jsp#!drivechipputt">Drive, Chip &amp Putt</a></li>
-                                <li><a href="/assets/static-html/clients.jsp#!walmart">Walmart</a></li>
-                                <li><a href="#">Project Name</a></li>
-                                <li><a href="#">Project Name</a></li>
-                                <li><a href="#">Project Name</a></li>
-                                <li><a href="#">Project Name</a></li>
-                                <li><a href="#">Project Name</a></li>
-                            </ul>
-                        </div>                  
-                        <span class="icon-toggle ">+</span>
+
+                        <%-- team card--%>
+                        <div class="card-base" id="alan" data-pos="backend">
+                            <div class="media">
+                                <img src="http://lorempixel.com/220/220/people/3/">
+                            </div>
+                            <div class="text">
+                                <h4 class="title">Alan</h4>
+                                <h5 class="subtitle">Back-End</h5>
+                            </div>
+                            <%-- all these fields are optional, just here as a placeholder--%>
+                            <div class="card-desc">
+                                <h4 class="desc-title"><span>Alans' role at DevEire</span></h4>
+                                <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare. Sed vehicula ligula vel velit sollicitudin, ac ornare nunc placerat. Etiam a suscipit odio, id feugiat dolor. Donec enim tellus, molestie at fermentum at, convallis rhoncus nibh.</p>
+                                <h4 class="desc-title"><span>Alans' Projects</span></h4>
+                                <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare.                   
+                                </p>
+                                <ul class="list-bullet list-col4">
+                                    <li><a href="/assets/static-html/clients.jsp#!drivechipputt">Drive, Chip &amp Putt</a></li>
+                                    <li><a href="/assets/static-html/clients.jsp#!walmart">Walmart</a></li>
+                                </ul>
+                            </div>                  
+                            <span class="icon-toggle ">+</span>
+                        </div>
+
+                        <%-- team card--%>
+                        <div class="card-base" id="ramon">
+                            <div class="media">
+                                <img src="http://lorempixel.com/220/220/people/4/">
+                            </div>
+                            <div class="text">
+                                <h4 class="title">Ramon</h4>
+                                <h5 class="subtitle">Front-End</h5>
+                            </div>
+                            <%-- all these fields are optional, just here as a placeholder--%>
+                            <div class="card-desc">
+                                <h4 class="desc-title"><span>Ramons' role at DevEire</span></h4>
+                                <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare. Sed vehicula ligula vel velit sollicitudin, ac ornare nunc placerat. Etiam a suscipit odio, id feugiat dolor. Donec enim tellus, molestie at fermentum at, convallis rhoncus nibh.</p>
+                                <h4 class="desc-title"><span>Ramons' Projects</span></h4>
+                                <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare.                   
+                                </p>
+                                <ul class="list-bullet list-col4">
+                                    <li><a href="/assets/static-html/clients.jsp#!drivechipputt">Drive, Chip &amp Putt</a></li>
+                                    <li><a href="/assets/static-html/clients.jsp#!walmart">Walmart</a></li>
+                                </ul>
+                            </div>                  
+                            <span class="icon-toggle ">+</span>
+                        </div>
+
+                        <%-- team card--%>
+                        <div class="card-base" id="martin" data-pos="backend">
+                            <div class="media">
+                                <img src="http://lorempixel.com/220/220/people/5/">
+                            </div>
+                            <div class="text">
+                                <h4 class="title">Martin</h4>
+                                <h5 class="subtitle">Back-End</h5>
+                            </div>
+                            <%-- all these fields are optional, just here as a placeholder--%>
+                            <div class="card-desc">
+                                <h4 class="desc-title"><span>Martins' role at DevEire</span></h4>
+                                <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare. Sed vehicula ligula vel velit sollicitudin, ac ornare nunc placerat. Etiam a suscipit odio, id feugiat dolor. Donec enim tellus, molestie at fermentum at, convallis rhoncus nibh.</p>
+                                <h4 class="desc-title"><span>Martins' Projects</span></h4>
+                                <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare.                   
+                                </p>
+                                <ul class="list-bullet list-col4">
+                                    <li><a href="/assets/static-html/clients.jsp#!drivechipputt">Drive, Chip &amp Putt</a></li>
+                                    <li><a href="/assets/static-html/clients.jsp#!walmart">Walmart</a></li>
+                                </ul>
+                            </div>                  
+                            <span class="icon-toggle ">+</span>
+                        </div>
+
+                        <%-- team card--%>
+                        <div class="card-base" id="lee" data-pos="backend">
+                            <div class="media">
+                                <img src="http://lorempixel.com/220/220/people/5/">
+                            </div>
+                            <div class="text">
+                                <h4 class="title">Lee</h4>
+                                <h5 class="subtitle">Back-End</h5>
+                            </div>
+                            <%-- all these fields are optional, just here as a placeholder--%>
+                            <div class="card-desc">
+                                <h4 class="desc-title"><span>Lees' role at DevEire</span></h4>
+                                <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare. Sed vehicula ligula vel velit sollicitudin, ac ornare nunc placerat. Etiam a suscipit odio, id feugiat dolor. Donec enim tellus, molestie at fermentum at, convallis rhoncus nibh.</p>
+                                <h4 class="desc-title"><span>Lees' Projects</span></h4>
+                                <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare.                   
+                                </p>
+                                <ul class="list-bullet list-col4">
+                                    <li><a href="/assets/static-html/clients.jsp#!drivechipputt">Drive, Chip &amp Putt</a></li>
+                                    <li><a href="/assets/static-html/clients.jsp#!walmart">Walmart</a></li>
+                                </ul>
+                            </div>                  
+                            <span class="icon-toggle ">+</span>
+                        </div>
+
                     </div>
-
-                    <%-- team card--%>
-                    <div class="card-base" id="ramon" data-pos="frontend">
-                        <div class="media">
-                            <img src="http://lorempixel.com/220/220/people/2/">
-                        </div>
-                        <div class="text">
-                            <h4 class="title">Ramon</h4>
-                            <h5 class="subtitle">Front End</h5>
-                        </div>
-                        <div class="card-desc">
-                            <h4 class="desc-title">Ramons' role at DevEire</h4>
-                            <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare. Sed vehicula ligula vel velit sollicitudin, ac ornare nunc placerat. Etiam a suscipit odio, id feugiat dolor. Donec enim tellus, molestie at fermentum at, convallis rhoncus nibh.</p>
-                            <h4 class="desc-title">About DevName</h4>
-                            <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare. Sed vehicula ligula vel velit sollicitudin, ac ornare nunc placerat. Etiam a suscipit odio, id feugiat dolor. Donec enim tellus, molestie at fermentum at, convallis rhoncus nibh.</p>
-                            <h4 class="desc-title">DevNames Projects</h4>
-                            <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare.                   
-                            </p>
-                            <ul class="list-bullet list-col4">
-                                <li><a href="/assets/static-html/clients.jsp#!drivechipputt">Drive, Chip &amp Putt</a></li>
-                                <li><a href="/assets/static-html/clients.jsp#!walmart">Walmart</a></li>
-                                <li><a href="#">Project Name</a></li>
-                                <li><a href="#">Project Name</a></li>
-                                <li><a href="#">Project Name</a></li>
-                                <li><a href="#">Project Name</a></li>
-                                <li><a href="#">Project Name</a></li>
-                            </ul>
-                        </div>                  
-                        <span class="icon-toggle ">+</span>
-                    </div>
-
-                    <%-- team card--%>
-                    <div class="card-base" id="alan" data-pos="backend">
-                        <div class="media">
-                            <img src="http://lorempixel.com/220/220/people/3/">
-                        </div>
-                        <div class="text">
-                            <h4 class="title">Alan</h4>
-                            <h5 class="subtitle">Back-End</h5>
-                        </div>
-                        <div class="card-desc">
-                            <h4 class="desc-title">Alans role at DevEire</h4>
-                            <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare. Sed vehicula ligula vel velit sollicitudin, ac ornare nunc placerat. Etiam a suscipit odio, id feugiat dolor. Donec enim tellus, molestie at fermentum at, convallis rhoncus nibh.</p>
-                            <h4 class="desc-title">About DevName</h4>
-                            <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare. Sed vehicula ligula vel velit sollicitudin, ac ornare nunc placerat. Etiam a suscipit odio, id feugiat dolor. Donec enim tellus, molestie at fermentum at, convallis rhoncus nibh.</p>
-                            <h4 class="desc-title">DevNames Projects</h4>
-                            <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare.                   
-                            </p>
-                            <ul class="list-bullet list-col4">
-                                <li><a href="/assets/static-html/clients.jsp#!drivechipputt">Drive, Chip &amp Putt</a></li>
-                                <li><a href="/assets/static-html/clients.jsp#!walmart">Walmart</a></li>
-                                <li><a href="#">Project Name</a></li>
-                                <li><a href="#">Project Name</a></li>
-                                <li><a href="#">Project Name</a></li>
-                                <li><a href="#">Project Name</a></li>
-                                <li><a href="#">Project Name</a></li>
-                            </ul>
-                        </div>                  
-                        <span class="icon-toggle ">+</span>
-                    </div>
-
-                    <%-- team card--%>
-                    <div class="card-base" id="richard">
-                        <div class="media">
-                            <img src="http://lorempixel.com/220/220/people/3/">
-                        </div>
-                        <div class="text">
-                            <h4 class="title">Ramon</h4>
-                            <h5 class="subtitle">Dev Position</h5>
-                        </div>
-                        <div class="card-desc">
-                            <h4 class="desc-title">DevName role at DevEire</h4>
-                            <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare. Sed vehicula ligula vel velit sollicitudin, ac ornare nunc placerat. Etiam a suscipit odio, id feugiat dolor. Donec enim tellus, molestie at fermentum at, convallis rhoncus nibh.</p>
-                            <h4 class="desc-title">About DevName</h4>
-                            <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare. Sed vehicula ligula vel velit sollicitudin, ac ornare nunc placerat. Etiam a suscipit odio, id feugiat dolor. Donec enim tellus, molestie at fermentum at, convallis rhoncus nibh.</p>
-                            <h4 class="desc-title">DevNames Projects</h4>
-                            <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare.                   
-                            </p>
-                            <ul class="list-bullet list-col4">
-                                <li><a href="/assets/static-html/clients.jsp#!drivechipputt">Drive, Chip &amp Putt</a></li>
-                                <li><a href="/assets/static-html/clients.jsp#!walmart">Walmart</a></li>
-                                <li><a href="#">Project Name</a></li>
-                                <li><a href="#">Project Name</a></li>
-                                <li><a href="#">Project Name</a></li>
-                                <li><a href="#">Project Name</a></li>
-                                <li><a href="#">Project Name</a></li>
-                            </ul>
-                        </div>                  
-                        <span class="icon-toggle ">+</span>
-                    </div>
-
                 </div>
+                <%-- end team card container --%>
             </div>
-            <%-- end team card container --%>
+            <%-- end team card fluid container --%>
         </div>
-        <hr class="alt2">
+
     </div>
     <%-- standard article layout --%>
     <div class="article-container">

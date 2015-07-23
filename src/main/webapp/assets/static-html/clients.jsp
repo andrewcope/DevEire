@@ -21,8 +21,8 @@
         </div>
         <%-- end article layout --%>
 
-        <%-- client card fluid layout --%>
-        <div class="card-fluid-container">
+        <%-- client card fluid container, edge to edge bg color, color should be published in CMS --%>
+        <div class="card-fluid-container" style="background: #2d3237">
             <div class="card-container" data-bsp-dev-card-actions>
 
                 <%-- client card row --%>
@@ -41,7 +41,7 @@
                                     <h5 class="title" data-bsp-truncate data-bsp-truncate-options='{"maxLines":2}'>Drvie Chip &amp Putt</h5>
                                 </div> 
                                 <div class="card-desc">
-                                    <h4 class="desc-title">title</h4>
+                                    <h4 class="desc-title"><span>title</span></h4>
                                     <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare. Sed vehicula ligula vel velit sollicitudin, ac ornare nunc placerat. Etiam a suscipit odio, id feugiat dolor. Donec enim tellus, molestie at fermentum at, convallis rhoncus nibh. <a href="#" class="lk-chevron-inverse">Read More</a> </p> 
                                 </div>
                             </div>   
@@ -57,7 +57,7 @@
                                     <h5 class="title" data-bsp-truncate data-bsp-truncate-options='{"maxLines":2}'>The Coca-Cola Company</h5>
                                 </div> 
                                 <div class="card-desc">
-                                    <h4 class="desc-title">title</h4>
+                                    <h4 class="desc-title"><span>title</span></h4>
                                     <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare. Sed vehicula ligula vel velit sollicitudin, ac ornare nunc placerat. Etiam a suscipit odio, id feugiat dolor. Donec enim tellus, molestie at fermentum at, convallis rhoncus nibh. <a href="#" class="lk-chevron-inverse">Read More</a> </p> 
                                 </div>
                             </div>   
@@ -73,7 +73,7 @@
                                     <h5 class="title" data-bsp-truncate data-bsp-truncate-options='{"maxLines":2}'>Cisco</h5>
                                 </div> 
                                 <div class="card-desc">
-                                    <h4 class="desc-title">title</h4>
+                                    <h4 class="desc-title"><span>title</span></h4>
                                     <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare. Sed vehicula ligula vel velit sollicitudin, ac ornare nunc placerat. Etiam a suscipit odio, id feugiat dolor. Donec enim tellus, molestie at fermentum at, convallis rhoncus nibh. <a href="#" class="lk-chevron-inverse">Read More</a> </p> 
                                 </div>
                             </div>   
@@ -89,7 +89,7 @@
                                     <h5 class="title" data-bsp-truncate data-bsp-truncate-options='{"maxLines":2}'>Walmart</h5>
                                 </div> 
                                 <div class="card-desc">
-                                    <h4 class="desc-title">title</h4>
+                                    <h4 class="desc-title"><span>title</span></h4>
                                     <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare. Sed vehicula ligula vel velit sollicitudin, ac ornare nunc placerat. Etiam a suscipit odio, id feugiat dolor. Donec enim tellus, molestie at fermentum at, convallis rhoncus nibh. <a href="#" class="lk-chevron-inverse">Read More</a> </p> 
                                 </div>
                             </div>  
@@ -105,7 +105,7 @@
                                     <h5 class="title" data-bsp-truncate data-bsp-truncate-options='{"maxLines":2}'>U.S. News & World Report</h5>
                                 </div> 
                                 <div class="card-desc">
-                                    <h4 class="desc-title">title</h4>
+                                    <h4 class="desc-title"><span>title</span></h4>
                                     <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare. Sed vehicula ligula vel velit sollicitudin, ac ornare nunc placerat. Etiam a suscipit odio, id feugiat dolor. Donec enim tellus, molestie at fermentum at, convallis rhoncus nibh. <a href="#" class="lk-chevron-inverse">Read More</a> </p> 
                                 </div>
                             </div>   
@@ -121,7 +121,7 @@
                                     <h5 class="title" data-bsp-truncate data-bsp-truncate-options='{"maxLines":2}'>MIT Sloan Executive Education</h5>
                                 </div> 
                                 <div class="card-desc">
-                                    <h4 class="desc-title">title</h4>
+                                    <h4 class="desc-title"><span>title</span></h4>
                                     <p class="desc-blurb">In leo lectus, tincidunt et cursus eget, dignissim at ante. Donec lacinia lorem ac nibh facilisis scelerisque. Sed lobortis maximus pharetra. Fusce lacinia neque ut molestie ornare. Sed vehicula ligula vel velit sollicitudin, ac ornare nunc placerat. Etiam a suscipit odio, id feugiat dolor. Donec enim tellus, molestie at fermentum at, convallis rhoncus nibh. <a href="#" class="lk-chevron-inverse">Read More</a> </p> 
                                 </div>
                             </div>   

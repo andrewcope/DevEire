@@ -7,7 +7,7 @@
         .dev-container-fluid;
         background: #2d3237;
         padding-top: 50px;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
         margin-bottom: 20px;
     }
     &-container{
@@ -30,10 +30,6 @@
     margin-bottom: 20px;
     float: left;
     display: inline;
-    @media @mq-only-mobile{
-        float: none;
-        display: inline-block;
-    }
     .text{
         top: 0;
         color: @white;
@@ -132,35 +128,27 @@
         color: @white;
     }
     .desc-title{
-        &:extend(.article-container .title all);
+        .font-primary-bold;
         .type-scale(2);
-        color: @white;
-        &:after{
-            width: 50px;
-            top: 1px;
-        }
-        @media @mq-only-mobile{
-            .type-scale(1);
-            line-height: 22px;
-            margin-bottom: @space /2;
+        margin-bottom: @space;
+        color: @white; 
+        span{
+            display: inline-block;
             &:after{
-                top: 0;
+                content: '';
+                background: @green-dark-1;
+                display: block;
+                height: 2px;
+                float: none;
+                width: 70%;
+                margin: 0 auto;
+                top: 6px;
+                position: relative;
             }
         }
-        &:after{
-            width: 130px;
-            position: relative;
-            top: 4px;
-        }
     }
-    p{
+    .desc-blurb{
         padding-left: @space-double;
-        @media @mq-only-mobile{
-            .type-scale(1);
-            font-size: 15px;
-            line-height: 25px;
-            padding-left: @space;
-        }
         .lk-chevron-inverse{
             color: @white;
             margin-left: 5px;
@@ -179,7 +167,7 @@
             }
         }
         @media @mq-only-mobile{
-            padding-left: @space;
+            padding-left: 0;
             li{
                 font-size: 15px;
                 line-height: 25px;
@@ -187,6 +175,9 @@
                 width: 100%;
             }
         }
+    }
+    .list-inline{
+        margin: 0;
     }
 }
 
@@ -206,4 +197,44 @@
         }
     }
 
+}
+
+@media @mq-only-mobile{
+    .card-base{
+        float: none;
+        display: inline-block;
+    }
+    .card-info-row{
+        .desc-title{
+
+            .type-scale(1);
+            font-size: 22px;
+            line-height: 22px;
+            margin-bottom: @space;
+            &:after{
+                top: 0;
+            }
+            span{
+                /*                &:after{
+                                    display: none;
+                                }*/
+            }
+        }
+        .desc-blurb{
+            padding: 0;
+            .type-scale(1);
+            font-size: 15px;
+            line-height: 25px;
+            margin-bottom: @space;
+        }
+        .list-bullet{ 
+            padding-left: 0;
+            li{
+                font-size: 15px;
+                line-height: 25px;
+                display: block;
+                width: 100%;
+            }
+        }
+    }
 }
