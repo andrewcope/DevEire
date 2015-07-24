@@ -8,7 +8,7 @@ a {
 a,
 .lk-default {
     color: @link-color;
-    transition: opacity .2s step-end,background .2s,color .2s,border .2s;
+    .default-hover;
     &:hover {
         color: @green-light-2;
     }
@@ -80,4 +80,7 @@ a,
     &:hover {
         color: @link-hover-inverse-alt-color;
     }
+}
+.default-hover{
+    transition: opacity .2s step-end,background .2s,color .2s,border .2s;
 }

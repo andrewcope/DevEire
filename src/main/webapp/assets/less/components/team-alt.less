@@ -1,0 +1,188 @@
+
+.team-page{
+    &:extend(.generic-page all);
+}
+.team-fluid-container{
+    .container-fluid();
+    max-width: 1200px;
+    .team-fluid-row{
+        .dev-row;
+        border-left: 1px solid #d7d7d7;
+        &.toggle-row{
+            &.fixed{
+                position: fixed;
+                top: 100px;
+                z-index: 1;
+                @media @mq-only-mobile{
+                    top: 50px;
+                }
+            }
+        }
+    }
+}
+
+
+#team{
+    border-top: 1px solid @gray-light-5;
+    position: relative;
+    min-height: 300px;
+    #dd-toggle{
+        display: none;
+        position: absolute;
+        top: @space-double-three-quarter;
+        left: @space-and-half;
+        z-index: 100;
+        margin-top: -1px;
+        a{
+            .square(28px);
+            position: absolute;
+            top: -28px;
+            cursor: pointer;
+            z-index: 10;
+            border: 1px solid @gray-light-1;
+            display: block;
+            background: @white;
+            color: @green-dark-1;
+            .text-center;
+            font-size: 15px;
+            i {
+                .square(28px);
+                line-height: 28px
+            }
+            &:hover{
+                background: @green-dark-1;
+                color: @white;
+                border-color: @green-dark-1;
+            }
+            &.active{
+                background: @green-dark-1;
+                color: @white;
+                border-color: @green-dark-1;
+            }
+        }
+        img {
+            padding: @space-three-quarter;
+            padding-bottom: 0
+        }
+
+    }
+    #dd-filter {
+        display: block;
+        display: none;
+        background: @white;
+        border: 1px solid @green-dark-1;
+        color: @green-dark-1;
+        padding: 0;
+        margin: 0;
+
+        li {
+            list-style: none;
+            cursor: pointer;
+            padding: 10px 40px 10px 15px;
+            .default-hover;
+            &.active {
+                background: @green-dark-1;
+                color: @white;
+                border-color: @green-dark-1;
+            }
+            &:hover{
+                background: @green-light-2;
+                color: @white;
+                border-color: @green-dark-1;
+            }
+        }
+    }
+    .team-logo{
+        .opacity(.6);
+    }
+    #info {
+        display: none;
+        clear: both;
+        padding: 40px @space-double;
+        background-color: #2d3237;
+        p, h3 {
+            color: @white;
+            text-align: center;
+            display: block;
+            &.emp-name {
+                .type-scale(3);
+            }
+            &.emp-pos{
+                .type-scale(2);
+            }
+            &.emp-blurb {
+                .type-scale(1);
+                max-width: 800px;
+                .text-center;
+                margin: 0 auto;
+                margin-bottom: @space;
+            }
+        }
+        .emp-name,
+        .emp-pos,
+        .emp-blurb{
+            margin-bottom: @space;
+        }
+    }
+    .team-fluid-card {
+        .make-sm-column(2);
+        border: 1px solid #d7d7d7;
+        border-top: none;
+        border-left: none;
+        cursor: pointer;
+        overflow: hidden;
+        background-color: @white;
+        .opacity(1);
+        .transition(opacity ease-out 0.2s);
+        .overlay{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;                
+            .opacity(0);
+            background-color: @green-dark-1;
+            .transition(opacity ease-out 0.2s);
+        }
+
+        &.inactive img {
+            -webkit-filter: blur(8px);
+            -moz-filter: blur(8px);
+            -o-filter: blur(8px);
+            -ms-filter: blur(8px);
+            filter: blur(8px);
+            /*filter: progid: DXImageTransform.Microsoft.Blur(PixelRadius='3');*/
+            opacity: .45
+        }
+        .emp-info {
+            display: none;
+        }
+        &.active-member{
+            .overlay{
+                .opacity(.2);
+            }
+        }
+        &:hover{
+            .overlay{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                .opacity(.2);
+            }
+        }
+        img {
+            width: 100%;
+            display: block
+        }
+    }
+}
+
+@media @mq-only-mobile{
+    #team .team-fluid-card {
+        width: 50%;
+        clear: none;
+        float: left
+    }
+}

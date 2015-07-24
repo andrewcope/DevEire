@@ -4,7 +4,7 @@
 <%-- Global header --%>
 <jsp:include page="/assets/static-html/common/global-header.jsp" />
 
-<div class="generic-page team-page">
+<div class="team-page">
     <div class="team-wrapper">
         <%-- standard article layout --%>
         <div class="article-container">
@@ -21,7 +21,7 @@
         </div>
         <%-- end article layout --%>
 
-        <jsp:include page="/assets/static-html/include/test.jsp" />
+        <jsp:include page="/assets/static-html/include/work-grid.jsp" />
 
         <%-- standard article layout --%>
         <div class="article-container">

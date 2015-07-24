@@ -1,10 +1,5 @@
-<%@include file="/WEB-INF/common/taglibs.jsp"%>
-<%-- Global start --%>
-<jsp:include page="/WEB-INF/common/startPage.jsp" />
-<%-- Global header --%>
-<jsp:include page="/assets/static-html/common/global-header.jsp" />
-<div class="team-fluid-container" id="team" data-bsp-work-alt>
-    <div class="team-fluid-row">
+<div class="team-fluid-container" id="team" data-bsp-dev-work-alt>
+    <div class="team-fluid-row toggle-row">
         <ul id="dd-toggle" style="display: block;">
             <li>
                 <a>
@@ -30,6 +25,10 @@
                 <h3 class="emp-name">Employee Name 1</h3>
                 <p class="emp-pos">Position</p>
                 <p class="emp-blurb">Blurb</p>
+                <ul class="list-social">
+                    <li><a href="mailto:devname@deveire.com?subject=Hello!" class="social-icon"><i class="icon icon-mail"></i></a></li>
+                    <li><a href="#" class="social-icon"><i class="icon icon-linkedin"></i></a></li>
+                </ul> 
             </div>
         </div>
         <div class="team-fluid-card" data-dept="frontend">
@@ -39,6 +38,10 @@
                 <h3 class="emp-name">Employee Name 2</h3>
                 <p class="emp-pos">Position</p>
                 <p class="emp-blurb">Blurb</p>
+                <ul class="list-social">
+                    <li><a href="mailto:devname@deveire.com?subject=Hello!" class="social-icon"><i class="icon icon-mail"></i></a></li>
+                    <li><a href="#" class="social-icon"><i class="icon icon-linkedin"></i></a></li>
+                </ul> 
             </div>
         </div>
         <div class="team-fluid-card" data-dept="frontend">
@@ -48,6 +51,10 @@
                 <h3 class="emp-name">Employee Name 3</h3>
                 <p class="emp-pos">Position</p>
                 <p class="emp-blurb">Blurb</p>
+                <ul class="list-social">
+                    <li><a href="mailto:devname@deveire.com?subject=Hello!" class="social-icon"><i class="icon icon-mail"></i></a></li>
+                    <li><a href="#" class="social-icon"><i class="icon icon-linkedin"></i></a></li>
+                </ul> 
             </div>
         </div>
         <div class="team-fluid-card" data-dept="frontend">
@@ -57,6 +64,10 @@
                 <h3 class="emp-name">Employee Name 4</h3>
                 <p class="emp-pos">Position</p>
                 <p class="emp-blurb">Blurb</p>
+                <ul class="list-social">
+                    <li><a href="mailto:devname@deveire.com?subject=Hello!" class="social-icon"><i class="icon icon-mail"></i></a></li>
+                    <li><a href="#" class="social-icon"><i class="icon icon-linkedin"></i></a></li>
+                </ul> 
             </div>
         </div>
         <%-- BACKEND --%>
@@ -67,6 +78,11 @@
                 <h3 class="emp-name">Employee Name 5</h3>
                 <p class="emp-pos">Position</p>
                 <p class="emp-blurb">Blurb</p>
+                <ul class="list-social">
+                    <li><a href="mailto:devname@deveire.com?subject=Hello!" class="social-icon"><i class="icon icon-mail"></i></a></li>
+                    <li><a href="#" class="social-icon"><i class="icon icon-linkedin"></i></a></li>
+                </ul> 
+
             </div>
         </div>
         <div class="team-fluid-card" data-dept="backend">
@@ -76,6 +92,10 @@
                 <h3 class="emp-name">Employee Name 6</h3>
                 <p class="emp-pos">Position</p>
                 <p class="emp-blurb">Blurb</p>
+                <ul class="list-social">
+                    <li><a href="mailto:devname@deveire.com?subject=Hello!" class="social-icon"><i class="icon icon-mail"></i></a></li>
+                    <li><a href="#" class="social-icon"><i class="icon icon-linkedin"></i></a></li>
+                </ul> 
             </div>
         </div>
         <div class="team-fluid-card" data-dept="backend">
@@ -85,6 +105,10 @@
                 <h3 class="emp-name">Employee Name 7</h3>
                 <p class="emp-pos">Position</p>
                 <p class="emp-blurb">Blurb</p>
+                <ul class="list-social">
+                    <li><a href="mailto:devname@deveire.com?subject=Hello!" class="social-icon"><i class="icon icon-mail"></i></a></li>
+                    <li><a href="#" class="social-icon"><i class="icon icon-linkedin"></i></a></li>
+                </ul> 
             </div>
         </div>
         <div class="team-fluid-card" data-dept="backend">
@@ -94,6 +118,10 @@
                 <h3 class="emp-name">Employee Name 8</h3>
                 <p class="emp-pos">Position</p>
                 <p class="emp-blurb">Blurb</p>
+                <ul class="list-social">
+                    <li><a href="mailto:devname@deveire.com?subject=Hello!" class="social-icon"><i class="icon icon-mail"></i></a></li>
+                    <li><a href="#" class="social-icon"><i class="icon icon-linkedin"></i></a></li>
+                </ul> 
             </div>
         </div>
         <%-- QA --%>
@@ -104,6 +132,10 @@
                 <h3 class="emp-name">Employee Name 9</h3>
                 <p class="emp-pos">Position</p>
                 <p class="emp-blurb">Blurb</p>
+                <ul class="list-social">
+                    <li><a href="mailto:devname@deveire.com?subject=Hello!" class="social-icon"><i class="icon icon-mail"></i></a></li>
+                    <li><a href="#" class="social-icon"><i class="icon icon-linkedin"></i></a></li>
+                </ul> 
             </div>
         </div>
         <div class="team-fluid-card" data-dept="qa">
@@ -113,6 +145,10 @@
                 <h3 class="emp-name">Employee Name 10</h3>
                 <p class="emp-pos">Position</p>
                 <p class="emp-blurb">Blurb</p>
+                <ul class="list-social">
+                    <li><a href="mailto:devname@deveire.com?subject=Hello!" class="social-icon"><i class="icon icon-mail"></i></a></li>
+                    <li><a href="#" class="social-icon"><i class="icon icon-linkedin"></i></a></li>
+                </ul> 
             </div>
         </div>
         <div class="team-fluid-card" data-dept="qa">
@@ -122,6 +158,10 @@
                 <h3 class="emp-name">Employee Name 11</h3>
                 <p class="emp-pos">Position</p>
                 <p class="emp-blurb">Blurb</p>
+                <ul class="list-social">
+                    <li><a href="mailto:devname@deveire.com?subject=Hello!" class="social-icon"><i class="icon icon-mail"></i></a></li>
+                    <li><a href="#" class="social-icon"><i class="icon icon-linkedin"></i></a></li>
+                </ul> 
             </div>
         </div>
         <div class="team-fluid-card" data-dept="qa">
@@ -131,6 +171,10 @@
                 <h3 class="emp-name">Employee Name 12</h3>
                 <p class="emp-pos">Position</p>
                 <p class="emp-blurb">Blurb</p>
+                <ul class="list-social">
+                    <li><a href="mailto:devname@deveire.com?subject=Hello!" class="social-icon"><i class="icon icon-mail"></i></a></li>
+                    <li><a href="#" class="social-icon"><i class="icon icon-linkedin"></i></a></li>
+                </ul> 
             </div>
         </div>
         <%-- ADMIN --%>
@@ -141,6 +185,10 @@
                 <h3 class="emp-name">Employee Name 13</h3>
                 <p class="emp-pos">Position</p>
                 <p class="emp-blurb">Blurb</p>
+                <ul class="list-social">
+                    <li><a href="mailto:devname@deveire.com?subject=Hello!" class="social-icon"><i class="icon icon-mail"></i></a></li>
+                    <li><a href="#" class="social-icon"><i class="icon icon-linkedin"></i></a></li>
+                </ul> 
             </div>
         </div>
         <div class="team-fluid-card" data-dept="admin">
@@ -150,6 +198,10 @@
                 <h3 class="emp-name">Employee Name 14</h3>
                 <p class="emp-pos">Position</p>
                 <p class="emp-blurb">Blurb</p>
+                <ul class="list-social">
+                    <li><a href="mailto:devname@deveire.com?subject=Hello!" class="social-icon"><i class="icon icon-mail"></i></a></li>
+                    <li><a href="#" class="social-icon"><i class="icon icon-linkedin"></i></a></li>
+                </ul> 
             </div>
         </div>
         <div class="team-fluid-card" data-dept="admin">
@@ -159,6 +211,10 @@
                 <h3 class="emp-name">Employee Name 15</h3>
                 <p class="emp-pos">Position</p>
                 <p class="emp-blurb">Blurb</p>
+                <ul class="list-social">
+                    <li><a href="mailto:devname@deveire.com?subject=Hello!" class="social-icon"><i class="icon icon-mail"></i></a></li>
+                    <li><a href="#" class="social-icon"><i class="icon icon-linkedin"></i></a></li>
+                </ul> 
             </div>
         </div>
         <div class="team-fluid-card" data-dept="admin">
@@ -168,6 +224,10 @@
                 <h3 class="emp-name">Employee Name 16</h3>
                 <p class="emp-pos">Position</p>
                 <p class="emp-blurb">Blurb</p>
+                <ul class="list-social">
+                    <li><a href="mailto:devname@deveire.com?subject=Hello!" class="social-icon"><i class="icon icon-mail"></i></a></li>
+                    <li><a href="#" class="social-icon"><i class="icon icon-linkedin"></i></a></li>
+                </ul> 
             </div>
         </div>
         <%-- OTHER --%>
@@ -178,6 +238,10 @@
                 <h3 class="emp-name">Employee Name 17</h3>
                 <p class="emp-pos">Position</p>
                 <p class="emp-blurb">Blurb</p>
+                <ul class="list-social">
+                    <li><a href="mailto:devname@deveire.com?subject=Hello!" class="social-icon"><i class="icon icon-mail"></i></a></li>
+                    <li><a href="#" class="social-icon"><i class="icon icon-linkedin"></i></a></li>
+                </ul> 
             </div>
         </div>
         <div class="team-fluid-card" data-dept="other">
@@ -187,6 +251,10 @@
                 <h3 class="emp-name">Employee Name 18</h3>
                 <p class="emp-pos">Position</p>
                 <p class="emp-blurb">Blurb</p>
+                <ul class="list-social">
+                    <li><a href="mailto:devname@deveire.com?subject=Hello!" class="social-icon"><i class="icon icon-mail"></i></a></li>
+                    <li><a href="#" class="social-icon"><i class="icon icon-linkedin"></i></a></li>
+                </ul> 
             </div>
         </div>
         <div class="team-fluid-card" data-dept="other">
@@ -196,6 +264,10 @@
                 <h3 class="emp-name">Employee Name 19</h3>
                 <p class="emp-pos">Position</p>
                 <p class="emp-blurb">Blurb</p>
+                <ul class="list-social">
+                    <li><a href="mailto:devname@deveire.com?subject=Hello!" class="social-icon"><i class="icon icon-mail"></i></a></li>
+                    <li><a href="#" class="social-icon"><i class="icon icon-linkedin"></i></a></li>
+                </ul> 
             </div>
         </div>
         <div class="team-fluid-card" data-dept="other">
@@ -205,11 +277,11 @@
                 <h3 class="emp-name">Employee Name 20</h3>
                 <p class="emp-pos">Position</p>
                 <p class="emp-blurb">Blurb</p>
+                <ul class="list-social">
+                    <li><a href="mailto:devname@deveire.com?subject=Hello!" class="social-icon"><i class="icon icon-mail"></i></a></li>
+                    <li><a href="#" class="social-icon"><i class="icon icon-linkedin"></i></a></li>
+                </ul> 
             </div>
         </div>
     </div>
 </div>
-<%-- Global footer --%>
-<jsp:include page="/assets/static-html/common/global-footer.jsp" />
-<%-- Global end --%>
-<jsp:include page="/WEB-INF/common/endPage.jsp" />

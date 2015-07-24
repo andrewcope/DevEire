@@ -4,7 +4,7 @@
 <%-- Global header --%>
 <jsp:include page="/assets/static-html/common/global-header.jsp" />
 
-<div class="generic-page client-page">
+<div class="client-page">
     <div class="client-wrapper">
         <%-- standard article layout --%>
         <div class="article-container">

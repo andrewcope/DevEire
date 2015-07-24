@@ -16,8 +16,6 @@
                 
                 <%-- optional enhancement, can be placed anywhere in page/site, placed here as example --%>
                 <jsp:include page="/assets/static-html/enhancements/img-right.jsp" />
-
-                <p>Nam efficitur elit eu dolor convallis tincidunt. <a href="#">Consectetur adipiscing</a> a congue efficitur. Donec eu faucibus erat. Curabitur sagittis, nunc et gravida varius, est leo imperdiet augue, gravida maximus lacus magna a lectus. Nunc blandit non libero sed eleifend. Mauris vitae sapien ac lectus ultricies tempus vel imperdiet eros. Pellentesque arcu leo, facilisis id urna nec, dapibus luctus magna.</p>
                 
                 <%-- optional enhancement, can be placed anywhere in page/site, placed here as example --%>
                 <jsp:include page="/assets/static-html/enhancements/blockquote.jsp" />

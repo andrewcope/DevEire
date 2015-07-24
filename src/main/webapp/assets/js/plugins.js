@@ -22,6 +22,7 @@ define(function (require) {
     require('plugins/modules/card-functions');
     require('plugins/modules/gallery-inline');
     require('plugins/modules/work');
+    require('plugins/modules/work-alt');
     require('plugins/modules/mobile-nav');
     require('plugins/modules/header-scroll');
     require('plugins/modules/back-to-top');

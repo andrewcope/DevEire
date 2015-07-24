@@ -4,7 +4,7 @@
 <%-- Global header --%>
 <jsp:include page="/assets/static-html/common/global-header.jsp" />
 
-<div class="generic-page work-page" data-bsp-stretch-bg>
+<div class="work-page" data-bsp-stretch-bg>
     <div class="work-wrapper">
         <%-- optional enhancement, placed here as example --%>
         <%-- Generic Lead --%>

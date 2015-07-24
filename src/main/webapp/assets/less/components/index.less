@@ -1,0 +1,38 @@
+
+// index page
+//============================
+
+.index-page{
+    &:extend(.generic-page all);
+    .index-fluid-container{
+        .dev-container-fluid;
+    }
+    .index-container{
+        .dev-container;
+        max-width: @container-narrow;
+    }
+    ul{
+        li{
+            padding-bottom: @space-half;            
+        }
+        ul{
+            padding-left: @space;
+        }
+    }
+    h4{
+        &:extend(.article-container .title all);
+        font-size: 20px;
+    }
+}
+
+.enhancements-page{
+    &:extend(.generic-page all);
+    padding-top: 0;
+    .enhancements-fluid-container{
+        .dev-container-fluid;
+    }
+    .enhancements-container{
+        .dev-container;
+        max-width: @container-narrow;
+    }
+}
