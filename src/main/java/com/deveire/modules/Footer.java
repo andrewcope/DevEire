@@ -4,12 +4,11 @@ import java.util.List;
 
 import com.deveire.model.Image;
 import com.deveire.model.Link;
-import com.deveire.model.LinkedImage;
 import com.psddev.cms.db.Content;
 import com.psddev.cms.db.Renderer;
 import com.psddev.cms.db.ToolUi;
 
-@Renderer.Path("/WEB-INF/common/global-footer.jsp")
+@Renderer.Path("/WEB-INF/common/globalFooter.jsp")
 public class Footer extends Content {
 
     private String title;
